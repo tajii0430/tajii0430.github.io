@@ -1,0 +1,954 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Portfolio of T-Jay Luke Gapusan, a student layout artist and graphic designer.">
+
+    <title>T-Jay Gapusan | Layout Artist</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- Custom Cursor -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <!-- Loading Screen -->
+    <div class="loader" id="loader">
+
+        <div class="loader-top">
+            <span>PORTFOLIO / 2026</span>
+            <span>LAYOUT ARTIST</span>
+        </div>
+
+        <div class="loader-content">
+
+            <p class="loader-label">
+                Preparing the issue
+            </p>
+
+            <div class="loader-title" aria-label="Sirmata">
+                <span>S</span>
+                <span>I</span>
+                <span>R</span>
+                <span>M</span>
+                <span>A</span>
+                <span>T</span>
+                <span>A</span>
+            </div>
+
+            <div class="loader-progress">
+                <div class="loader-progress-bar"></div>
+            </div>
+
+            <p class="loader-number">
+                <span id="loaderPercent">0</span>%
+            </p>
+
+        </div>
+
+    </div>
+
+    <main class="site">
+
+        <!-- Navigation -->
+        <header class="navbar">
+
+            <a href="#home" class="logo">
+                TJ<span>.</span>
+            </a>
+
+            <nav class="nav-links">
+                <a href="#about">About</a>
+                <a href="#works">Works</a>
+                <a href="#process">Creative Toolbox</a>
+                <a href="#contact">Contact</a>
+            </nav>
+
+            <button class="menu-button" type="button" aria-label="Open navigation menu">
+                Menu
+            </button>
+
+        </header>
+
+        <!-- Hero -->
+        <section class="hero" id="home">
+
+            <div class="hero-grid">
+
+                <div class="hero-number">
+                    <span>ISSUE</span>
+                    <strong>003</strong>
+                </div>
+
+                <div class="hero-introduction">
+                    <span>Student Designer</span>
+                    <span>BSIT LEVEL III</span>
+                </div>
+
+                <div class="hero-main">
+
+                    <p class="hero-kicker">
+                        Design Archive
+                    </p>
+
+                    <h1 class="hero-title">
+
+                        <span class="hero-line hero-line-bold">
+                            T-JAY LUKE
+                        </span>
+
+                        <span class="hero-line hero-line-outline">
+                            GAPUSAN
+                        </span>
+
+                    </h1>
+
+                    <div class="hero-role">
+
+                        <span class="hero-role-line"></span>
+
+                        <p>
+                            Layout Artist
+                            <span>&amp;</span>
+                            Visual Storyteller
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="hero-description">
+
+                    <p>
+                        I turn blank pages into visual stories through creativity, passion, and a keen eye for detail.
+                    </p>
+
+                </div>
+
+                <a href="#works" class="hero-button">
+
+                    <span>Explore selected works</span>
+
+                    <span class="button-arrow">
+                        ↘
+                    </span>
+
+                </a>
+
+            </div>
+
+            <div class="hero-orbit" aria-hidden="true">
+
+                <div class="orbit-circle"></div>
+
+                <p>
+                    DESIGN • LAYOUT • GRAPHICS •
+                </p>
+
+            </div>
+
+            <div class="scroll-indicator" aria-hidden="true">
+
+                <span>Scroll to read</span>
+
+                <div class="scroll-line"></div>
+
+            </div>
+
+        </section>
+
+        <!-- Moving Text -->
+        <section class="marquee-section">
+
+            <div class="marquee">
+
+                <div class="marquee-track">
+
+                    <span>LAYOUT AND PAGE DESIN</span>
+                    <span>GRAPHIC ARTS</span>
+                    <span>LOGO DESIGN</span>
+                    <span>VISUAL HIERARCHY</span>
+                    <span>PUBLICATION LAYOUT</span>
+                    <span>TYPOGRAPHY</span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- About -->
+        <section class="about-section" id="about">
+
+            <div class="about-topline">
+
+                <p class="section-label about-label">
+                    About / Page 01
+                </p>
+
+                <p class="about-edition">
+                    SIRMATA Qualifying Examination Edition • 2026
+                </p>
+
+            </div>
+
+            <div class="about-layout">
+
+                <div class="about-heading">
+
+                    <p class="about-kicker">
+                        Behind the layouts
+                    </p>
+
+                    <h2 class="about-title">
+
+                        <span class="about-title-solid">
+                            Who is
+                        </span>
+
+                        <span class="about-title-outline">
+                            T-Jay?
+                        </span>
+
+                    </h2>
+
+                </div>
+
+                <div class="about-portrait-column">
+
+                    <div class="about-image-wrap">
+
+                        <img src="images/profile.jpg" alt="Portrait of T-Jay Luke Gapusan" class="about-image"
+                            loading="lazy">
+
+                        <div class="about-image-overlay"></div>
+
+                        <span class="about-image-number">
+                            01
+                        </span>
+
+                    </div>
+
+                    <div class="about-image-caption">
+                        <span>Senior Layout Artist</span>
+                        <span>Pagudpud, Ilocos Norte</span>
+                    </div>
+
+                </div>
+
+                <div class="about-content">
+
+                    <p class="about-introduction">
+                        I am a Level III Information Technology student and
+                        aspiring Senior Layout Artist who enjoys transforming
+                        stories, ideas, and information into visually engaging
+                        designs.
+                    </p>
+
+                    <p class="about-body">
+                        My work focuses on publication materials, page design
+                        and layout, logo design, typography, and visual
+                        storytelling. I pay close attention to hierarchy,
+                        spacing, alignment, and consistency.
+                    </p>
+
+                    <p class="about-body">
+                        Through every project, I continue to explore how design
+                        can communicate meaning, strengthen a message, and help
+                        stories reach their intended audience.
+                    </p>
+
+                    <div class="about-signature">
+
+                        <span class="signature-line"></span>
+
+                        <p>
+                            T-Jay Luke Gapusan
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="about-information">
+
+                <div class="about-info-card">
+
+                    <p class="about-info-label">
+                        Current Status
+                    </p>
+
+                    <h3>
+                        BS Information Technology III
+                    </h3>
+
+                    <p>
+                        Developing creative design and technical skills.
+                    </p>
+
+                </div>
+
+                <div class="about-info-card">
+
+                    <p class="about-info-label">
+                        Experience
+                    </p>
+
+                    <h3>
+                        Junior Layout Artist
+                    </h3>
+
+                    <p>
+                        Academic Year 2024–2025
+                    </p>
+
+                    <h3 class="secondary-experience">
+                        Senior Layout Artist
+                    </h3>
+
+                    <p>
+                        Academic Year 2025–2026
+                    </p>
+
+                </div>
+
+                <div class="about-info-card">
+
+                    <p class="about-info-label">
+                        Design Focus
+                    </p>
+
+                    <h3>
+                        Visual Communication
+                    </h3>
+
+                    <p>
+                        Combining typography, hierarchy, composition, and
+                        storytelling.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- AREAS OF PRACTICE -->
+            <div class="practice-showcase">
+
+                <div class="practice-showcase-heading">
+
+                    <p class="about-info-label">
+                        Areas of Practice
+                    </p>
+
+                    <h3>
+                        What I bring
+                        <span>to the page.</span>
+                    </h3>
+
+                    <p class="practice-showcase-intro">
+                        A focused set of creative disciplines that shape how I approach
+                        publication design, visual storytelling, and layout.
+                    </p>
+
+                </div>
+
+                <div class="practice-showcase-list">
+
+                    <article class="practice-showcase-item">
+
+                        <span class="practice-showcase-number">
+                            01
+                        </span>
+
+                        <h4>
+                            Graphic Design
+                        </h4>
+
+                        <span class="practice-showcase-arrow">
+                            ↗
+                        </span>
+
+                    </article>
+
+                    <article class="practice-showcase-item">
+
+                        <span class="practice-showcase-number">
+                            02
+                        </span>
+
+                        <h4>
+                            Publication Materials
+                        </h4>
+
+                        <span class="practice-showcase-arrow">
+                            ↗
+                        </span>
+
+                    </article>
+
+                    <article class="practice-showcase-item">
+
+                        <span class="practice-showcase-number">
+                            03
+                        </span>
+
+                        <h4>
+                            Typography
+                        </h4>
+
+                        <span class="practice-showcase-arrow">
+                            ↗
+                        </span>
+
+                    </article>
+
+                    <article class="practice-showcase-item">
+
+                        <span class="practice-showcase-number">
+                            04
+                        </span>
+
+                        <h4>
+                            Photo Manipulation
+                        </h4>
+
+                        <span class="practice-showcase-arrow">
+                            ↗
+                        </span>
+
+                    </article>
+
+                    <article class="practice-showcase-item">
+
+                        <span class="practice-showcase-number">
+                            05
+                        </span>
+
+                        <h4>
+                            Logo Design
+                        </h4>
+
+                        <span class="practice-showcase-arrow">
+                            ↗
+                        </span>
+
+                    </article>
+
+                    <article class="practice-showcase-item">
+
+                        <span class="practice-showcase-number">
+                            06
+                        </span>
+
+                        <h4>
+                            Page Design and Layout
+                        </h4>
+
+                        <span class="practice-showcase-arrow">
+                            ↗
+                        </span>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Works -->
+        <section class="works-section" id="works">
+
+            <div class="works-header">
+
+                <div>
+
+                    <p class="section-label">
+                        Selected Works / 02
+                    </p>
+
+                    <h2 class="works-title">
+                        Stories I've
+                        <span>designed.</span>
+                    </h2>
+
+                </div>
+
+                <p class="works-intro">
+                    A selected collection of publication materials,
+                    graphic artworks, newspaper designs, and identity work.
+                </p>
+
+            </div>
+
+            <!-- Filters -->
+            <div class="category-filter" aria-label="Project categories">
+
+                <button class="filter-button active" data-filter="all" type="button">
+                    All
+                </button>
+
+                <button class="filter-button" data-filter="holiday" type="button">
+                    Holiday Pubmats
+                </button>
+
+                <button class="filter-button" data-filter="devcomm" type="button">
+                    Dev Comm / Feature
+                </button>
+
+                <button class="filter-button" data-filter="logo" type="button">
+                    Logo Design
+                </button>
+
+                <button class="filter-button" data-filter="unigames" type="button">
+                    UniGames 2025
+                </button>
+
+                <button class="filter-button" data-filter="pasuc" type="button">
+                    PASUC / SCUAA
+                </button>
+
+            </div>
+
+            <!-- Generated by JavaScript -->
+            <div class="project-collection" id="projectCollection"></div>
+
+        </section>
+
+        <!-- Creative Toolbox -->
+        <section class="toolbox-section" id="process">
+
+            <div class="toolbox-topline">
+
+                <p class="section-label toolbox-label">
+                    Creative Toolbox / Page 03
+                </p>
+
+                <p class="toolbox-edition">
+                    Applications behind the work
+                </p>
+
+            </div>
+
+            <div class="toolbox-header">
+
+                <div>
+
+                    <p class="toolbox-kicker">
+                        The tools I rely on
+                    </p>
+
+                    <h2 class="toolbox-title">
+                        Creative
+                        <span>toolbox.</span>
+                    </h2>
+
+                </div>
+
+                <p class="toolbox-intro">
+                    Three applications, each with a specific role in my
+                    design workflow—from page layout and graphic arts to
+                    logo development.
+                </p>
+
+            </div>
+
+            <div class="toolbox-progress" aria-hidden="true">
+
+                <span class="toolbox-progress-item active">
+                    01
+                </span>
+
+                <span class="toolbox-progress-line"></span>
+
+                <span class="toolbox-progress-item">
+                    02
+                </span>
+
+                <span class="toolbox-progress-line"></span>
+
+                <span class="toolbox-progress-item">
+                    03
+                </span>
+
+            </div>
+
+            <div class="toolbox-list">
+
+                <!-- Adobe InDesign -->
+                <article class="toolbox-card" data-tool="indesign" tabindex="0">
+
+                    <div class="toolbox-card-accent"></div>
+
+                    <span class="toolbox-card-index">
+                        01
+                    </span>
+
+                    <div class="toolbox-abbreviation">
+                        ID
+                    </div>
+
+                    <div class="toolbox-card-content">
+
+                        <div class="toolbox-card-heading">
+
+                            <p class="toolbox-role">
+                                Primary Application
+                            </p>
+
+                            <h3>
+                                Adobe InDesign
+                            </h3>
+
+                        </div>
+
+                        <p class="toolbox-description">
+                            My primary application for creating layout and page designs, including magazine, regular
+                            issue, special issue, and literary folio.
+                        </p>
+
+                        <ul class="toolbox-skills">
+                            <li>Page Design</li>
+                            <li>Publication Layout</li>
+                        </ul>
+
+                    </div>
+
+                </article>
+
+                <!-- Adobe Photoshop -->
+                <article class="toolbox-card" data-tool="photoshop" tabindex="0">
+
+                    <div class="toolbox-card-accent"></div>
+
+                    <span class="toolbox-card-index">
+                        02
+                    </span>
+
+                    <div class="toolbox-abbreviation">
+                        PS
+                    </div>
+
+                    <div class="toolbox-card-content">
+
+                        <div class="toolbox-card-heading">
+
+                            <p class="toolbox-role">
+                                Graphic Arts
+                            </p>
+
+                            <h3>
+                                Adobe Photoshop
+                            </h3>
+
+                        </div>
+
+                        <p class="toolbox-description">
+                            Used for creating publication materials, graphic
+                            artworks, and photo manipulations.
+                        </p>
+
+                        <ul class="toolbox-skills">
+                            <li>Graphic Arts</li>
+                            <li>Publication Materials</li>
+                            <li>Photo Manipulation</li>
+                            <li>Image Editing</li>
+                        </ul>
+
+                    </div>
+
+                </article>
+
+                <!-- Adobe Illustrator -->
+                <article class="toolbox-card" data-tool="illustrator" tabindex="0">
+
+                    <div class="toolbox-card-accent"></div>
+
+                    <span class="toolbox-card-index">
+                        03
+                    </span>
+
+                    <div class="toolbox-abbreviation">
+                        AI
+                    </div>
+
+                    <div class="toolbox-card-content">
+
+                        <div class="toolbox-card-heading">
+
+                            <p class="toolbox-role">
+                                Logo Design
+                            </p>
+
+                            <h3>
+                                Adobe Illustrator
+                            </h3>
+
+                        </div>
+
+                        <p class="toolbox-description">
+                            Used specifically for creating clean, scalable,
+                            and precise logos.
+                        </p>
+
+                        <ul class="toolbox-skills">
+                            <li>Logo Design</li>
+                            <li>Scalable Artwork</li>
+                        </ul>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+            <div class="toolbox-closing">
+
+                <p>
+                    Three different tools.
+                    <span>With one common goal.</span>
+                </p>
+
+            </div>
+
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section class="contact-section" id="contact">
+
+            <div class="contact-topline">
+
+                <p class="section-label contact-page-label">
+                    Contact / Final Page
+                </p>
+
+                <p class="contact-status">
+                    Available for publication work
+                </p>
+
+            </div>
+
+            <div class="contact-heading-wrap">
+
+                <p class="contact-kicker">
+                    Ready for the...
+                </p>
+
+                <h2 class="contact-heading">
+                    Next
+                    <span>issue?</span>
+                </h2>
+
+            </div>
+
+            <div class="contact-content">
+
+                <div class="contact-introduction">
+
+                    <p class="contact-lead">
+                        Let’s turn the next story into something
+                        worth seeing.
+                    </p>
+
+                    <p class="contact-copy">
+                        I’m ready to contribute ideas, structure, and
+                        visual direction to SIRMATA’s future publications.
+                    </p>
+
+                </div>
+
+                <div class="contact-details">
+
+                    <a href="mailto:your-email@gmail.com" class="contact-link">
+                        <span class="contact-link-label">
+                            Email
+                        </span>
+
+                        <span class="contact-link-value">
+                            tjluke0430@gmail.com
+                        </span>
+
+                        <span class="contact-link-arrow">
+                            ↗
+                        </span>
+                    </a>
+
+                    <a href="http://facebook.com/tjayluke.gapusan.1" target="_blank" rel="noopener noreferrer"
+                        class="contact-link">
+                        <span class="contact-link-label">
+                            Facebook
+                        </span>
+
+                        <span class="contact-link-value">
+                            T-Jay
+                        </span>
+
+                        <span class="contact-link-arrow">
+                            ↗
+                        </span>
+                    </a>
+
+                    <a href="tel:+639000000000" class="contact-link">
+                        <span class="contact-link-label">
+                            Phone
+                        </span>
+
+                        <span class="contact-link-value">
+                            +63 993 076 5005
+                        </span>
+
+                        <span class="contact-link-arrow">
+                            ↗
+                        </span>
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="contact-marquee" aria-hidden="true">
+
+                <div class="contact-marquee-track">
+
+                    <span>
+                        Layout & Page Design
+                    </span>
+
+                    <i>•</i>
+
+                    <span>
+                        Publication Materials
+                    </span>
+
+                    <i>•</i>
+
+                    <span>
+                        Logo Design
+                    </span>
+
+                    <i>•</i>
+
+                    <span>
+                        Graphic Arts
+                    </span>
+
+                    <i>•</i>
+
+                    <span>
+                        Layout & Page Design
+                    </span>
+
+                    <i>•</i>
+
+                    <span>
+                        Visual Storytelling
+                    </span>
+
+                    <i>•</i>
+
+                    <span>
+                        Graphic Arts
+                    </span>
+
+                    <i>•</i>
+
+                </div>
+
+            </div>
+
+            <footer class="contact-footer">
+
+                <p>
+                    Designed and developed by
+                    <strong>T-Jay Luke Gapusan</strong>
+                </p>
+
+                <p>
+                    © 2026
+                </p>
+
+                <a href="#hero" class="back-to-top">
+                    Back to top
+                    <span>↑</span>
+                </a>
+
+            </footer>
+
+        </section>
+
+
+        <!-- Full-Screen Artwork Viewer -->
+        <div class="project-lightbox" id="projectLightbox" aria-hidden="true" role="dialog" aria-modal="true"
+            aria-label="Project preview">
+
+            <button class="lightbox-close" id="lightboxClose" type="button" aria-label="Close project preview">
+                Close
+            </button>
+
+            <button class="lightbox-navigation lightbox-previous" id="lightboxPrevious" type="button"
+                aria-label="View previous artwork">
+                ←
+            </button>
+
+            <button class="lightbox-navigation lightbox-next" id="lightboxNext" type="button"
+                aria-label="View next artwork">
+                →
+            </button>
+
+            <div class="lightbox-content">
+
+                <div class="lightbox-information">
+
+                    <p class="lightbox-label">
+                        Selected Work
+                    </p>
+
+                    <h3 id="lightboxTitle">
+                        Project Title
+                    </h3>
+
+                    <p id="lightboxDescription" class="lightbox-description">
+                        Project description
+                    </p>
+
+                    <p id="lightboxCounter" class="lightbox-counter">
+                        01 / 13
+                    </p>
+
+                </div>
+
+                <div class="lightbox-image-stage">
+
+                    <div class="lightbox-image-wrap">
+
+                        <img src="" alt="" id="lightboxImage" class="lightbox-image">
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+</body>
+
+</html>
