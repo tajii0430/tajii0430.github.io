@@ -594,32 +594,64 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     function updateLightbox(card) {
+
         const visible = getVisibleProjects();
 
         currentIndex = visible.indexOf(card);
 
-        lightboxTitle.textContent =
-            card.dataset.title;
+        lightboxTitle.textContent = card.dataset.title;
 
         adjustLightboxTitleSize();
 
         lightboxDescription.textContent =
-            card.dataset.description;
-
-        lightboxImage.src =
-            card.dataset.image;
-
-        lightboxImage.alt =
-            card.dataset.title;
+            card.dataset.description || "";
 
         lightboxCounter.textContent =
-            `${String(currentIndex + 1).padStart(2, "0")} / ` +
-            `${String(visible.length).padStart(2, "0")}`;
+            `${String(currentIndex + 1).padStart(2, "0")} / ${String(visible.length).padStart(2, "0")}`;
+
+        lightboxImage.classList.remove("is-loaded");
+
+        lightboxImage.removeAttribute("src");
+
+        lightboxImage.alt = card.dataset.title;
+
+        return new Promise((resolve, reject) => {
+
+            lightboxImage.onload = () => {
+
+                lightboxImage.classList.add("is-loaded");
+
+                resolve();
+
+            };
+
+            lightboxImage.onerror = () => {
+
+                console.error(
+                    "Failed to load image:",
+                    card.dataset.image
+                );
+
+                reject();
+
+            };
+
+            lightboxImage.src = card.dataset.image;
+
+            if (
+                lightboxImage.complete &&
+                lightboxImage.naturalWidth > 0
+            ) {
+
+                lightboxImage.onload();
+
+            }
+
+        });
+
     }
 
-    function openLightbox(card) {
-
-        updateLightbox(card);
+    async function openLightbox(card) {
 
         projectLightbox.classList.add("is-open");
 
@@ -628,37 +660,61 @@ document.addEventListener("DOMContentLoaded", () => {
             "false"
         );
 
+        projectLightbox.scrollTop = 0;
+
         body.classList.add("lightbox-open");
 
         if (typeof gsap !== "undefined") {
 
-            gsap.timeline()
-                .to(projectLightbox, {
-                    opacity: 1,
-                    duration: 0.35
-                })
-                .from(
-                    ".lightbox-information > *",
-                    {
-                        y: 40,
-                        opacity: 0,
-                        stagger: 0.08,
-                        duration: 0.6
-                    }
-                )
-                .from(
-                    lightboxImageWrap,
-                    {
-                        scale: 0.78,
-                        rotate: 4,
-                        opacity: 0,
-                        duration: 0.8
-                    },
-                    "-=0.5"
-                );
+            gsap.set(projectLightbox, {
+                opacity: 1
+            });
 
         } else {
+
             projectLightbox.style.opacity = "1";
+
+        }
+
+        try {
+
+            await updateLightbox(card);
+
+        } catch (error) {
+
+            console.error(error);
+
+        }
+
+        if (typeof gsap !== "undefined") {
+
+            gsap.fromTo(
+                ".lightbox-information > *",
+                {
+                    y: 30,
+                    opacity: 0
+                },
+                {
+                    y: 0,
+                    opacity: 1,
+                    stagger: 0.06,
+                    duration: 0.45
+                }
+            );
+
+            gsap.fromTo(
+                lightboxImageWrap,
+                {
+                    scale: .94,
+                    opacity: 0
+                },
+                {
+                    scale: 1,
+                    opacity: 1,
+                    duration: .45
+                }
+            );
+
         }
 
         lightboxClose.focus();
@@ -694,22 +750,45 @@ document.addEventListener("DOMContentLoaded", () => {
 
     }
 
-    function showProject(direction) {
+    async function showProject(direction) {
 
         const visible =
             getVisibleProjects();
 
         currentIndex += direction;
 
-        if (currentIndex < 0) {
+        if (currentIndex < 0)
             currentIndex = visible.length - 1;
-        }
 
-        if (currentIndex >= visible.length) {
+        if (currentIndex >= visible.length)
             currentIndex = 0;
+
+        if (typeof gsap !== "undefined") {
+
+            gsap.set(
+                lightboxImageWrap,
+                {
+                    opacity: 1,
+                    scale: 1,
+                    x: 0,
+                    y: 0,
+                    rotate: 0
+                }
+            );
+
         }
 
-        updateLightbox(visible[currentIndex]);
+        try {
+
+            await updateLightbox(
+                visible[currentIndex]
+            );
+
+        } catch (error) {
+
+            return;
+
+        }
 
         if (typeof gsap !== "undefined") {
 
@@ -717,14 +796,14 @@ document.addEventListener("DOMContentLoaded", () => {
                 lightboxImageWrap,
                 {
                     opacity: 0,
-                    scale: 0.9,
-                    x: direction * 50
+                    scale: .96,
+                    x: direction * 30
                 },
                 {
                     opacity: 1,
                     scale: 1,
                     x: 0,
-                    duration: 0.55
+                    duration: .4
                 }
             );
 
