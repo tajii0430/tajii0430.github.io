@@ -2550,3 +2550,294 @@ img {
         transition: none;
     }
 }
+
+/* ==================================================
+   FINAL MOBILE HERO FIX
+   Place this at the END of style.css
+================================================== */
+
+@media (max-width: 700px) {
+
+    /* NAVIGATION */
+
+    .navbar {
+        position: absolute;
+        grid-template-columns: 1fr auto;
+        min-height: 82px;
+        padding:
+            calc(env(safe-area-inset-top) + 18px)
+            20px
+            18px;
+    }
+
+    .logo {
+        font-size: 23px;
+    }
+
+    .menu-button {
+        display: block;
+        font-size: 13px;
+        letter-spacing: 0.08em;
+    }
+
+    /* HERO CONTAINER */
+
+    .hero {
+        min-height: auto;
+        padding:
+            calc(env(safe-area-inset-top) + 125px)
+            20px
+            52px;
+        overflow: hidden;
+    }
+
+    /* Remove desktop vertical guide lines */
+
+    .hero::before,
+    .hero::after {
+        display: none;
+    }
+
+    /* Switch desktop grid into a clean mobile stack */
+
+    .hero-grid {
+        min-height: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+    }
+
+    /* ISSUE NUMBER */
+
+    .hero-number {
+        order: 1;
+        margin-bottom: 42px;
+    }
+
+    .hero-number span {
+        margin-bottom: 8px;
+        font-size: 9px;
+        letter-spacing: 0.24em;
+    }
+
+    .hero-number strong {
+        font-size: 2.2rem;
+        line-height: 1;
+    }
+
+    /* STUDENT INFORMATION */
+
+    .hero-introduction {
+        order: 2;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 12px;
+        margin-bottom: 56px;
+        font-size: 8px;
+        line-height: 1.35;
+        letter-spacing: 0.12em;
+    }
+
+    .hero-introduction span {
+        display: block;
+        max-width: 48%;
+    }
+
+    .hero-introduction span:last-child {
+        text-align: right;
+    }
+
+    /* MAIN NAME */
+
+    .hero-main {
+        order: 3;
+        width: 100%;
+    }
+
+    .hero-kicker {
+        margin: 0 0 14px;
+        font-size: 9px;
+        letter-spacing: 0.2em;
+    }
+
+    .hero-title {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        font-size: clamp(3.4rem, 15.7vw, 5.2rem);
+        line-height: 0.82;
+        letter-spacing: -0.075em;
+    }
+
+    .hero-line {
+        width: 100%;
+        display: block;
+    }
+
+    .hero-line-bold {
+        align-self: flex-start;
+    }
+
+    .hero-line-outline {
+        align-self: flex-start;
+        margin-top: 5px;
+        padding-left: 10%;
+        color: transparent;
+        -webkit-text-stroke: 1.3px var(--green);
+    }
+
+    /* ROLE */
+
+    .hero-role {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 52px minmax(0, 1fr);
+        align-items: center;
+        gap: 14px;
+        margin: 34px 0 0;
+    }
+
+    .hero-role-line {
+        width: 100%;
+    }
+
+    .hero-role p {
+        font-size: clamp(0.95rem, 4vw, 1.15rem);
+        line-height: 1.25;
+    }
+
+    /* DESCRIPTION */
+
+    .hero-description {
+        order: 4;
+        width: 100%;
+        max-width: none;
+        margin-top: 42px;
+    }
+
+    .hero-description p {
+        max-width: 34rem;
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+    /* BUTTON */
+
+    .hero-button {
+        order: 5;
+        width: 100%;
+        min-height: 88px;
+        margin-top: 34px;
+        padding: 0 22px;
+    }
+
+    .hero-button span:first-child {
+        font-size: 10px;
+        letter-spacing: 0.1em;
+    }
+
+    .button-arrow .icon {
+        width: 24px;
+        height: 24px;
+    }
+
+    /* ORBIT GRAPHIC */
+
+    .hero-orbit {
+        top: 315px;
+        right: -125px;
+        width: 245px;
+        height: 245px;
+        opacity: 0.45;
+        pointer-events: none;
+    }
+
+    .hero-orbit p {
+        font-size: 7px;
+        letter-spacing: 0.2em;
+    }
+
+    /* Hide the desktop vertical scroll label */
+
+    .scroll-indicator {
+        display: none;
+    }
+}
+
+
+/* SMALLER PHONES */
+
+@media (max-width: 430px) {
+
+    .hero {
+        padding-right: 18px;
+        padding-left: 18px;
+    }
+
+    .hero-number {
+        margin-bottom: 38px;
+    }
+
+    .hero-introduction {
+        margin-bottom: 48px;
+    }
+
+    .hero-title {
+        font-size: clamp(3rem, 15.3vw, 4.4rem);
+    }
+
+    .hero-line-outline {
+        padding-left: 7%;
+    }
+
+    .hero-role {
+        grid-template-columns: 42px minmax(0, 1fr);
+        gap: 12px;
+        margin-top: 30px;
+    }
+
+    .hero-description {
+        margin-top: 36px;
+    }
+
+    .hero-button {
+        min-height: 82px;
+        margin-top: 30px;
+        padding: 0 18px;
+    }
+
+    .hero-orbit {
+        top: 300px;
+        right: -145px;
+        width: 230px;
+        height: 230px;
+    }
+}
+
+
+/* VERY SMALL PHONES */
+
+@media (max-width: 360px) {
+
+    .hero-title {
+        font-size: 14.5vw;
+    }
+
+    .hero-introduction {
+        font-size: 7px;
+    }
+
+    .hero-role p {
+        font-size: 0.9rem;
+    }
+
+    .hero-description p {
+        font-size: 13px;
+    }
+
+    .hero-button span:first-child {
+        font-size: 9px;
+    }
+}
