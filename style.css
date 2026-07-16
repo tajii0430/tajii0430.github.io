@@ -1852,8 +1852,18 @@ img {
 
 @media (max-width: 700px) {
 
+    /* NAVIGATION */
+
     .navbar {
-        grid-template-columns: 1fr;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        min-height: 82px;
+        display: grid;
+        grid-template-columns: auto 1fr;
+        align-items: center;
+        gap: 20px;
         padding:
             calc(env(safe-area-inset-top) + 18px)
             20px
@@ -1862,38 +1872,196 @@ img {
 
     .logo {
         justify-self: start;
+        font-size: 23px;
     }
 
     .nav-links {
+        display: flex;
+        justify-self: end;
+        align-items: center;
+        gap: 18px;
+    }
+
+    /* Show only Works and Contact on mobile */
+
+    .nav-links a:nth-child(1),
+    .nav-links a:nth-child(3) {
         display: none;
     }
 
+    .nav-links a {
+        font-size: 10px;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        white-space: nowrap;
+    }
 
-}
+    /* HERO */
 
     .hero {
-        padding: 110px 20px 30px;
+        min-height: auto;
+        padding:
+            calc(env(safe-area-inset-top) + 125px)
+            20px
+            52px;
+        overflow: hidden;
+    }
+
+    .hero::before,
+    .hero::after {
+        display: none;
     }
 
     .hero-grid {
-        grid-template-columns: 1fr;
+        min-height: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 0;
     }
 
-    .hero-introduction,
-    .hero-main,
-    .hero-description,
-    .hero-button {
-        grid-column: 1;
+    .hero-number {
+        order: 1;
+        margin-bottom: 42px;
+    }
+
+    .hero-number span {
+        margin-bottom: 8px;
+        font-size: 9px;
+        letter-spacing: 0.24em;
+    }
+
+    .hero-number strong {
+        font-size: 2.2rem;
+        line-height: 1;
+    }
+
+    .hero-introduction {
+        order: 2;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 12px;
+        margin-bottom: 56px;
+        font-size: 8px;
+        line-height: 1.35;
+        letter-spacing: 0.12em;
+    }
+
+    .hero-introduction span {
+        display: block;
+        max-width: 48%;
+    }
+
+    .hero-introduction span:last-child {
+        text-align: right;
+    }
+
+    .hero-main {
+        order: 3;
+        width: 100%;
+    }
+
+    .hero-kicker {
+        margin: 0 0 14px;
+        font-size: 9px;
+        letter-spacing: 0.2em;
     }
 
     .hero-title {
-        font-size: 16vw;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        font-size: clamp(3.4rem, 15.7vw, 5.2rem);
+        line-height: 0.82;
+        letter-spacing: -0.075em;
     }
 
-    .hero-kicker,
-    .hero-role {
-        margin-left: 0;
+    .hero-line {
+        width: 100%;
+        display: block;
     }
+
+    .hero-line-bold {
+        align-self: flex-start;
+    }
+
+    .hero-line-outline {
+        align-self: flex-start;
+        margin-top: 5px;
+        padding-left: 10%;
+        color: transparent;
+        -webkit-text-stroke: 1.3px var(--green);
+    }
+
+    .hero-role {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 52px minmax(0, 1fr);
+        align-items: center;
+        gap: 14px;
+        margin: 34px 0 0;
+    }
+
+    .hero-role-line {
+        width: 100%;
+    }
+
+    .hero-role p {
+        font-size: clamp(0.95rem, 4vw, 1.15rem);
+        line-height: 1.25;
+    }
+
+    .hero-description {
+        order: 4;
+        width: 100%;
+        max-width: none;
+        margin-top: 42px;
+    }
+
+    .hero-description p {
+        max-width: 34rem;
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+    .hero-button {
+        order: 5;
+        width: 100%;
+        min-height: 88px;
+        margin-top: 34px;
+        padding: 0 22px;
+    }
+
+    .hero-button span:first-child {
+        font-size: 10px;
+        letter-spacing: 0.1em;
+    }
+
+    .button-arrow .icon {
+        width: 24px;
+        height: 24px;
+    }
+
+    .hero-orbit {
+        top: 315px;
+        right: -125px;
+        width: 245px;
+        height: 245px;
+        opacity: 0.45;
+        pointer-events: none;
+    }
+
+    .hero-orbit p {
+        font-size: 7px;
+        letter-spacing: 0.2em;
+    }
+
+    .scroll-indicator {
+        display: none;
+    }
+
+    /* GENERAL MOBILE LAYOUT */
 
     .about-section,
     .works-section {
@@ -1913,117 +2081,105 @@ img {
     .project-grid {
         grid-template-columns: 1fr;
     }
+}
 
-    /* MOBILE LIGHTBOX */
+@media (max-width: 430px) {
 
-    .project-lightbox {
-        overflow-y: auto;
-        overflow-x: hidden;
-        overscroll-behavior: contain;
-        -webkit-overflow-scrolling: touch;
+    .navbar {
+        gap: 14px;
+        padding-right: 18px;
+        padding-left: 18px;
     }
 
-    .lightbox-content {
-        width: 100%;
-        min-height: 100dvh;
-        display: flex;
-        flex-direction: column;
-        overflow: visible;
+    .nav-links {
+        gap: 15px;
     }
 
-    /* Artwork appears first on narrow screens */
-
-    .lightbox-image-stage {
-        order: 1;
-        width: 100%;
-        height: auto;
-        min-height: 58dvh;
-        display: grid;
-        place-items: center;
-        overflow: visible;
-        padding:
-            calc(env(safe-area-inset-top) + 82px) 20px 34px;
-        background: var(--ink);
+    .nav-links a {
+        font-size: 9px;
+        letter-spacing: 0.08em;
     }
 
-    .lightbox-image-wrap {
-        width: min(88vw, 520px);
-        height: auto;
-        max-width: 100%;
-        max-height: 66dvh;
-        display: grid;
-        place-items: center;
-        overflow: visible;
-        box-shadow:
-            0 22px 55px rgba(0, 0, 0, 0.32);
+    .hero {
+        padding-right: 18px;
+        padding-left: 18px;
     }
 
-    .lightbox-image {
-        width: 100%;
-        height: auto;
-        max-width: 100%;
-        max-height: 66dvh;
-        display: block;
-        object-fit: contain;
+    .hero-number {
+        margin-bottom: 38px;
     }
 
-    /* Information appears underneath the artwork */
-
-    .lightbox-information {
-        order: 2;
-        width: 100%;
-        height: auto;
-        min-height: auto;
-        display: block;
-        overflow: visible;
-        padding:
-            42px 25px calc(112px + env(safe-area-inset-bottom));
-        border-right: 0;
-        border-top: 1px solid rgba(255, 255, 255, 0.18);
+    .hero-introduction {
+        margin-bottom: 48px;
     }
 
-    .lightbox-label {
-        margin-bottom: 42px;
+    .hero-title {
+        font-size: clamp(3rem, 15.3vw, 4.4rem);
     }
 
-    .lightbox-information h3,
-    .lightbox-information h3.title-medium,
-    .lightbox-information h3.title-long {
-        margin-bottom: 22px;
-        font-size: clamp(2.35rem, 11vw, 4.5rem);
-        line-height: 0.9;
-        overflow-wrap: anywhere;
+    .hero-line-outline {
+        padding-left: 7%;
     }
 
-    .lightbox-description {
-        width: 100%;
-        max-width: 100%;
-        font-size: 15px;
-        line-height: 1.6;
+    .hero-role {
+        grid-template-columns: 42px minmax(0, 1fr);
+        gap: 12px;
+        margin-top: 30px;
     }
 
-    .lightbox-counter {
-        margin-top: 28px;
+    .hero-description {
+        margin-top: 36px;
     }
 
-    .lightbox-close {
-        top: calc(env(safe-area-inset-top) + 15px);
-        right: 18px;
-        padding: 11px 18px;
+    .hero-button {
+        min-height: 82px;
+        margin-top: 30px;
+        padding: 0 18px;
     }
 
-    .lightbox-navigation {
-        bottom: calc(env(safe-area-inset-bottom) + 18px);
-        width: 54px;
-        height: 54px;
+    .hero-orbit {
+        top: 300px;
+        right: -145px;
+        width: 230px;
+        height: 230px;
+    }
+}
+
+@media (max-width: 360px) {
+
+    .navbar {
+        gap: 10px;
+        padding-right: 14px;
+        padding-left: 14px;
     }
 
-    .lightbox-previous {
-        right: 84px;
+    .nav-links {
+        gap: 11px;
     }
 
-    .lightbox-next {
-        right: 18px;
+    .nav-links a {
+        font-size: 8px;
+        letter-spacing: 0.05em;
+    }
+
+    .hero-title {
+        font-size: 14.5vw;
+    }
+
+    .hero-introduction {
+        font-size: 7px;
+    }
+
+    .hero-role p {
+        font-size: 0.9rem;
+    }
+
+    .hero-description p {
+        font-size: 13px;
+    }
+
+    .hero-button span:first-child {
+        font-size: 9px;
     }
 }
 
@@ -2546,291 +2702,5 @@ img {
     .contact-resume-button,
     .contact-resume-button::before {
         transition: none;
-    }
-}
-
-/* ==================================================
-   FINAL MOBILE HERO FIX
-   Place this at the END of style.css
-================================================== */
-
-@media (max-width: 700px) {
-
-    /* NAVIGATION */
-
-    .navbar {
-        position: absolute;
-        grid-template-columns: 1fr auto;
-        min-height: 82px;
-        padding:
-            calc(env(safe-area-inset-top) + 18px)
-            20px
-            18px;
-    }
-
-    .logo {
-        font-size: 23px;
-    }
-
-
-    /* HERO CONTAINER */
-
-    .hero {
-        min-height: auto;
-        padding:
-            calc(env(safe-area-inset-top) + 125px)
-            20px
-            52px;
-        overflow: hidden;
-    }
-
-    /* Remove desktop vertical guide lines */
-
-    .hero::before,
-    .hero::after {
-        display: none;
-    }
-
-    /* Switch desktop grid into a clean mobile stack */
-
-    .hero-grid {
-        min-height: auto;
-        display: flex;
-        flex-direction: column;
-        gap: 0;
-    }
-
-    /* ISSUE NUMBER */
-
-    .hero-number {
-        order: 1;
-        margin-bottom: 42px;
-    }
-
-    .hero-number span {
-        margin-bottom: 8px;
-        font-size: 9px;
-        letter-spacing: 0.24em;
-    }
-
-    .hero-number strong {
-        font-size: 2.2rem;
-        line-height: 1;
-    }
-
-    /* STUDENT INFORMATION */
-
-    .hero-introduction {
-        order: 2;
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
-        gap: 12px;
-        margin-bottom: 56px;
-        font-size: 8px;
-        line-height: 1.35;
-        letter-spacing: 0.12em;
-    }
-
-    .hero-introduction span {
-        display: block;
-        max-width: 48%;
-    }
-
-    .hero-introduction span:last-child {
-        text-align: right;
-    }
-
-    /* MAIN NAME */
-
-    .hero-main {
-        order: 3;
-        width: 100%;
-    }
-
-    .hero-kicker {
-        margin: 0 0 14px;
-        font-size: 9px;
-        letter-spacing: 0.2em;
-    }
-
-    .hero-title {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        font-size: clamp(3.4rem, 15.7vw, 5.2rem);
-        line-height: 0.82;
-        letter-spacing: -0.075em;
-    }
-
-    .hero-line {
-        width: 100%;
-        display: block;
-    }
-
-    .hero-line-bold {
-        align-self: flex-start;
-    }
-
-    .hero-line-outline {
-        align-self: flex-start;
-        margin-top: 5px;
-        padding-left: 10%;
-        color: transparent;
-        -webkit-text-stroke: 1.3px var(--green);
-    }
-
-    /* ROLE */
-
-    .hero-role {
-        width: 100%;
-        display: grid;
-        grid-template-columns: 52px minmax(0, 1fr);
-        align-items: center;
-        gap: 14px;
-        margin: 34px 0 0;
-    }
-
-    .hero-role-line {
-        width: 100%;
-    }
-
-    .hero-role p {
-        font-size: clamp(0.95rem, 4vw, 1.15rem);
-        line-height: 1.25;
-    }
-
-    /* DESCRIPTION */
-
-    .hero-description {
-        order: 4;
-        width: 100%;
-        max-width: none;
-        margin-top: 42px;
-    }
-
-    .hero-description p {
-        max-width: 34rem;
-        font-size: 14px;
-        line-height: 1.7;
-    }
-
-    /* BUTTON */
-
-    .hero-button {
-        order: 5;
-        width: 100%;
-        min-height: 88px;
-        margin-top: 34px;
-        padding: 0 22px;
-    }
-
-    .hero-button span:first-child {
-        font-size: 10px;
-        letter-spacing: 0.1em;
-    }
-
-    .button-arrow .icon {
-        width: 24px;
-        height: 24px;
-    }
-
-    /* ORBIT GRAPHIC */
-
-    .hero-orbit {
-        top: 315px;
-        right: -125px;
-        width: 245px;
-        height: 245px;
-        opacity: 0.45;
-        pointer-events: none;
-    }
-
-    .hero-orbit p {
-        font-size: 7px;
-        letter-spacing: 0.2em;
-    }
-
-    /* Hide the desktop vertical scroll label */
-
-    .scroll-indicator {
-        display: none;
-    }
-}
-
-
-/* SMALLER PHONES */
-
-@media (max-width: 430px) {
-
-    .hero {
-        padding-right: 18px;
-        padding-left: 18px;
-    }
-
-    .hero-number {
-        margin-bottom: 38px;
-    }
-
-    .hero-introduction {
-        margin-bottom: 48px;
-    }
-
-    .hero-title {
-        font-size: clamp(3rem, 15.3vw, 4.4rem);
-    }
-
-    .hero-line-outline {
-        padding-left: 7%;
-    }
-
-    .hero-role {
-        grid-template-columns: 42px minmax(0, 1fr);
-        gap: 12px;
-        margin-top: 30px;
-    }
-
-    .hero-description {
-        margin-top: 36px;
-    }
-
-    .hero-button {
-        min-height: 82px;
-        margin-top: 30px;
-        padding: 0 18px;
-    }
-
-    .hero-orbit {
-        top: 300px;
-        right: -145px;
-        width: 230px;
-        height: 230px;
-    }
-}
-
-
-/* VERY SMALL PHONES */
-
-@media (max-width: 360px) {
-
-    .hero-title {
-        font-size: 14.5vw;
-    }
-
-    .hero-introduction {
-        font-size: 7px;
-    }
-
-    .hero-role p {
-        font-size: 0.9rem;
-    }
-
-    .hero-description p {
-        font-size: 13px;
-    }
-
-    .hero-button span:first-child {
-        font-size: 9px;
     }
 }
