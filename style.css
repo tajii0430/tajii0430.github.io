@@ -209,15 +209,6 @@ img {
     width: 100%;
 }
 
-.menu-button {
-    display: none;
-    justify-self: end;
-    border: 0;
-    background: transparent;
-    color: var(--ink);
-    cursor: pointer;
-    text-transform: uppercase;
-}
 
 /* HERO */
 
@@ -1860,18 +1851,25 @@ img {
 }
 
 @media (max-width: 700px) {
+
     .navbar {
-        grid-template-columns: 1fr 1fr;
-        padding: 22px 20px;
+        grid-template-columns: 1fr;
+        padding:
+            calc(env(safe-area-inset-top) + 18px)
+            20px
+            18px;
+    }
+
+    .logo {
+        justify-self: start;
     }
 
     .nav-links {
         display: none;
     }
 
-    .menu-button {
-        display: block;
-    }
+
+}
 
     .hero {
         padding: 110px 20px 30px;
@@ -2574,11 +2572,6 @@ img {
         font-size: 23px;
     }
 
-    .menu-button {
-        display: block;
-        font-size: 13px;
-        letter-spacing: 0.08em;
-    }
 
     /* HERO CONTAINER */
 
