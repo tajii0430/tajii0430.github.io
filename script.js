@@ -37,14 +37,14 @@ document.addEventListener("DOMContentLoaded", () => {
             title: "Development Communication / Feature",
             items: [
                 {
-                    title: "Development Communication 01",
+                    title: "Development Communication",
                     description:
                         "",
                     image:
                         "images/projects/devcomm-pubmats/devcomm-01.jpg"
                 },
                 {
-                    title: "Feature Publication Material",
+                    title: "Feature",
                     description:
                         "",
                     image:
