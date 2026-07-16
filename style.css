@@ -1316,6 +1316,69 @@ img {
 }
 
 
+/* -----------------------------------
+   SVG ICONS
+----------------------------------- */
+
+.icon {
+    width: 1.35em;
+    height: 1.35em;
+    display: block;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.7;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    flex-shrink: 0;
+}
+
+.button-arrow,
+.practice-showcase-arrow,
+.contact-link-arrow,
+.back-to-top span {
+    display: inline-grid;
+    place-items: center;
+}
+
+.button-arrow .icon {
+    width: 26px;
+    height: 26px;
+}
+
+.practice-showcase-arrow .icon {
+    width: clamp(20px, 2vw, 32px);
+    height: clamp(20px, 2vw, 32px);
+}
+
+.contact-link-arrow .icon {
+    width: 25px;
+    height: 25px;
+}
+
+.back-to-top .icon {
+    width: 17px;
+    height: 17px;
+}
+
+.lightbox-navigation .icon {
+    width: 22px;
+    height: 22px;
+    margin: auto;
+}
+
+.practice-showcase-item:hover .practice-showcase-arrow {
+    transform: translate(5px, -5px);
+}
+
+.contact-link:hover .contact-link-arrow,
+.contact-link:focus-visible .contact-link-arrow {
+    transform: translate(3px, -3px);
+}
+
+.back-to-top:hover span {
+    transform: translateY(-5px);
+}
+
 /* WORKS */
 
 .works-section {
