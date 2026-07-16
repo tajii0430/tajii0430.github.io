@@ -1,3 +1,5466 @@
+ChatGPT
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Generated image: Web portfolio design step-by-step guide
+
+
+Edit
+
+
+also include the main logo of sirmata as a design, I will upload it as logosolo.png
+
+
+Pasted code.html
+File
+
+Pasted code (2).js
+JavaScript
+
+Pasted code (3).css
+File
+ill send the code and give the full updated code: 
+
+
+Pasted code(1).html
+File
+
+Pasted code (2).css
+File
+I want you to organize the display of the artworks, every photo should display in square ratio exept for scuaa 1 and pasuc 1: 
+
+
+Pasted code.js
+JavaScript
+
+Generated image: Selected works – design layout options
+
+
+Edit
+
+
+
+Pasted code(2).html
+File
+give full code: 
+
+fix the overlap in all artworks preview
+
+
+Pasted code.css
+File
+which part to edit: 
+
+Perfect. This section will become one of the most visually impressive parts of your portfolio. Instead of a simple list of software, we'll make it feel like an Adobe Creative Cloud showcase while still matching Sirmata's clean editorial identity.
+
+Overall Concept
+Imagine scrolling down from your artworks.
+
+The background changes from dark (Works) back to white.
+
+Large text fades in.
+
+CREATIVE
+TOOLBOX
+Below it:
+
+The applications behind every publication.
+
+Then three huge interactive cards.
+
+Layout
+──────────────────────────────────────────────
+
+CREATIVE TOOLBOX
+
+The applications behind every publication.
+
+──────────────────────────────────────────────
+
+
+[ INDESIGN ]
+
+     ID
+
+Primary Application
+
+Publication Layout
+Editorial Design
+Typography
+Grid Systems
+Print-ready Files
+
+
+──────────────────────────────────────────────
+
+[ PHOTOSHOP ]
+
+     PS
+
+Graphic Design
+
+Publication Materials
+Graphic Arts
+Photo Manipulation
+Image Editing
+
+
+──────────────────────────────────────────────
+
+[ ILLUSTRATOR ]
+
+     AI
+
+Logo Design
+
+Vector Graphics
+Logo Design
+Brand Identity
+
+──────────────────────────────────────────────
+Instead of three small cards...
+
+We'll make them full-width editorial panels.
+
+Think Apple website.
+
+Card 1
+Adobe InDesign
+Large faded background
+
+ID
+at about
+
+opacity: 0.04
+font-size: 240px
+Foreground
+
+ADOBE INDESIGN
+
+PRIMARY APPLICATION
+Description
+
+My primary software for creating editorial layouts, publication pages, and print-ready designs with strong typography, hierarchy, and grid systems.
+
+Then
+
+Editorial Layout
+
+Page Design
+
+Typography
+
+Grid Systems
+
+Print Preparation
+Hover animation
+
+Card rises
+
+translateY(-8px)
+Background
+
+White
+
+↓
+
+Dark Green
+
+Text
+
+Black
+
+↓
+
+White
+
+The huge
+
+ID
+rotates slightly
+
+The green accent line grows.
+
+Photoshop
+Huge background
+
+PS
+Description
+
+Graphic Design
+Text
+
+Used for creating publication materials, digital graphics, and photo manipulations that strengthen visual storytelling.
+
+Skills
+
+Graphic Arts
+
+Publication Materials
+
+Photo Manipulation
+
+Image Editing
+
+Visual Compositing
+Hover
+
+Image editing theme
+
+Tiny grain animation
+
+Background becomes green
+
+Illustrator
+Huge
+
+AI
+Description
+
+Logo Design
+Text
+
+Used to create clean vector logos and scalable visual identities for organizations and events.
+
+Skills
+
+Logo Design
+
+Vector Graphics
+
+Brand Identity
+
+Scalable Artwork
+Scroll Animation
+Section appears
+
+CREATIVE
+
+TOOLBOX
+slides upward.
+
+Cards appear
+
+Left
+
+↓
+
+Center
+
+↓
+
+Right
+One after another.
+
+Hover Animation
+When hovering
+
+ID
+moves
+
+15px
+towards the cursor.
+
+The title moves
+
+5px
+The description fades upward.
+
+The accent line
+
+0px
+
+↓
+
+100%
+Even Better
+Instead of writing
+
+Adobe InDesign
+We'll use Adobe's branding style.
+
+Example
+
+ID
+
+Adobe InDesign
+The ID is much bigger.
+
+Like
+
+ID
+
+Adobe
+InDesign
+Progress Indicator
+At the very top
+
+01
+02
+03
+As you scroll
+
+01 ●────── 02 ○────── 03 ○
+↓
+
+01 ●────── 02 ●────── 03 ○
+↓
+
+01 ●────── 02 ●────── 03 ●
+Very Apple-like.
+
+Color Usage
+We'll still follow the Sirmata brand:
+
+Background: White (#F7F8F5)
+
+Primary Accent: Dark Green (#01390A)
+
+Text: Soft Black (#111411)
+
+Typography: Helvetica Neue / Helvetica Bold & Thin
+
+Accent Lines: Dark Green
+
+Large ID/PS/AI Letters: Very low opacity green (opacity: 0.04–0.06)
+
+I have one more idea that would make this section feel premium.
+Instead of using static text for the application abbreviations (ID, PS, AI), we can animate them so they subtly follow the user's cursor within each card. It's a restrained motion—only a few pixels—but it gives the impression that the software itself is "alive." Combined with a slight lift of the card and the expanding accent line, it creates a polished interaction without distracting from your portfolio.
+
+I think this approach fits both the editorial aesthetic of Sirmata and the modern, high-end feel you're aiming for.
+
+
+give the code now
+
+Add the following section after your Works section and before the lightbox or footer.
+
+HTML
+<!-- Creative Toolbox -->
+<section class="toolbox-section" id="process">
+
+    <div class="toolbox-topline">
+
+        <p class="section-label toolbox-label">
+            Creative Toolbox / Page 03
+        </p>
+
+        <p class="toolbox-edition">
+            Applications behind the work
+        </p>
+
+    </div>
+
+    <div class="toolbox-header">
+
+        <div>
+
+            <p class="toolbox-kicker">
+                The tools I rely on
+            </p>
+
+            <h2 class="toolbox-title">
+                Creative
+                <span>toolbox.</span>
+            </h2>
+
+        </div>
+
+        <p class="toolbox-intro">
+            Three applications, each with a specific role in my
+            design workflow—from page layout and graphic arts to
+            logo development.
+        </p>
+
+    </div>
+
+    <div class="toolbox-progress" aria-hidden="true">
+
+        <span class="toolbox-progress-item active">
+            01
+        </span>
+
+        <span class="toolbox-progress-line"></span>
+
+        <span class="toolbox-progress-item">
+            02
+        </span>
+
+        <span class="toolbox-progress-line"></span>
+
+        <span class="toolbox-progress-item">
+            03
+        </span>
+
+    </div>
+
+    <div class="toolbox-list">
+
+        <!-- Adobe InDesign -->
+        <article
+            class="toolbox-card"
+            data-tool="indesign"
+            tabindex="0"
+        >
+
+            <div class="toolbox-card-accent"></div>
+
+            <span class="toolbox-card-index">
+                01
+            </span>
+
+            <div class="toolbox-abbreviation">
+                ID
+            </div>
+
+            <div class="toolbox-card-content">
+
+                <div class="toolbox-card-heading">
+
+                    <p class="toolbox-role">
+                        Primary Application
+                    </p>
+
+                    <h3>
+                        Adobe InDesign
+                    </h3>
+
+                </div>
+
+                <p class="toolbox-description">
+                    My primary application for creating publication
+                    pages, editorial layouts, and print-ready designs.
+                </p>
+
+                <ul class="toolbox-skills">
+                    <li>Page Design</li>
+                    <li>Publication Layout</li>
+                    <li>Typography</li>
+                    <li>Grid Systems</li>
+                    <li>Print-Ready Files</li>
+                </ul>
+
+            </div>
+
+        </article>
+
+        <!-- Adobe Photoshop -->
+        <article
+            class="toolbox-card"
+            data-tool="photoshop"
+            tabindex="0"
+        >
+
+            <div class="toolbox-card-accent"></div>
+
+            <span class="toolbox-card-index">
+                02
+            </span>
+
+            <div class="toolbox-abbreviation">
+                PS
+            </div>
+
+            <div class="toolbox-card-content">
+
+                <div class="toolbox-card-heading">
+
+                    <p class="toolbox-role">
+                        Graphic Arts
+                    </p>
+
+                    <h3>
+                        Adobe Photoshop
+                    </h3>
+
+                </div>
+
+                <p class="toolbox-description">
+                    Used for creating publication materials, graphic
+                    artworks, photo manipulations, and digital visual
+                    compositions.
+                </p>
+
+                <ul class="toolbox-skills">
+                    <li>Graphic Arts</li>
+                    <li>Publication Materials</li>
+                    <li>Photo Manipulation</li>
+                    <li>Image Editing</li>
+                    <li>Visual Compositing</li>
+                </ul>
+
+            </div>
+
+        </article>
+
+        <!-- Adobe Illustrator -->
+        <article
+            class="toolbox-card"
+            data-tool="illustrator"
+            tabindex="0"
+        >
+
+            <div class="toolbox-card-accent"></div>
+
+            <span class="toolbox-card-index">
+                03
+            </span>
+
+            <div class="toolbox-abbreviation">
+                AI
+            </div>
+
+            <div class="toolbox-card-content">
+
+                <div class="toolbox-card-heading">
+
+                    <p class="toolbox-role">
+                        Logo Design
+                    </p>
+
+                    <h3>
+                        Adobe Illustrator
+                    </h3>
+
+                </div>
+
+                <p class="toolbox-description">
+                    Used specifically for creating clean, scalable,
+                    and precise vector logos for events and
+                    organizations.
+                </p>
+
+                <ul class="toolbox-skills">
+                    <li>Logo Design</li>
+                    <li>Vector Graphics</li>
+                    <li>Brand Marks</li>
+                    <li>Scalable Artwork</li>
+                </ul>
+
+            </div>
+
+        </article>
+
+    </div>
+
+    <div class="toolbox-closing">
+
+        <p>
+            The application changes.
+            <span>The intention stays clear.</span>
+        </p>
+
+    </div>
+
+</section>
+CSS
+Add this before your Contact section styles:
+
+/* -----------------------------------
+   CREATIVE TOOLBOX
+----------------------------------- */
+
+.toolbox-section {
+    position: relative;
+    padding: 120px 40px;
+    overflow: hidden;
+    background: var(--white);
+    color: var(--ink);
+}
+
+.toolbox-section::before,
+.toolbox-section::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 1px;
+    height: 100%;
+    background: var(--border);
+    pointer-events: none;
+}
+
+.toolbox-section::before {
+    left: 25%;
+}
+
+.toolbox-section::after {
+    right: 25%;
+}
+
+.toolbox-topline {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+    margin-bottom: 75px;
+    padding-bottom: 18px;
+    border-bottom: 1px solid var(--border);
+}
+
+.toolbox-label {
+    color: rgba(17, 20, 17, 0.58);
+}
+
+.toolbox-edition {
+    font-size: 10px;
+    font-weight: 300;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+}
+
+.toolbox-header {
+    position: relative;
+    z-index: 2;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    align-items: end;
+    gap: 50px;
+    margin-bottom: 75px;
+}
+
+.toolbox-kicker {
+    margin-bottom: 18px;
+    font-size: 11px;
+    font-weight: 300;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+}
+
+.toolbox-title {
+    display: flex;
+    flex-direction: column;
+    font-size: clamp(4rem, 8vw, 8.5rem);
+    font-weight: 700;
+    line-height: 0.83;
+    letter-spacing: -0.075em;
+    text-transform: uppercase;
+}
+
+.toolbox-title span {
+    color: transparent;
+    -webkit-text-stroke: 1.7px var(--green);
+}
+
+.toolbox-intro {
+    max-width: 350px;
+    color: rgba(17, 20, 17, 0.66);
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.75;
+}
+
+/* PROGRESS */
+
+.toolbox-progress {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.toolbox-progress-item {
+    display: grid;
+    place-items: center;
+    width: 38px;
+    height: 38px;
+    border: 1px solid var(--border);
+    border-radius: 50%;
+    color: rgba(17, 20, 17, 0.48);
+    font-size: 9px;
+    letter-spacing: 0.1em;
+    transition:
+        background 0.35s ease,
+        color 0.35s ease,
+        border-color 0.35s ease,
+        transform 0.35s ease;
+}
+
+.toolbox-progress-item.active {
+    border-color: var(--green);
+    background: var(--green);
+    color: var(--white);
+    transform: scale(1.08);
+}
+
+.toolbox-progress-line {
+    flex: 1;
+    height: 1px;
+    background: var(--border);
+}
+
+/* CARDS */
+
+.toolbox-list {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.toolbox-card {
+    position: relative;
+    min-height: 390px;
+    display: grid;
+    grid-template-columns:
+        minmax(100px, 0.45fr)
+        minmax(0, 2fr);
+    overflow: hidden;
+    border: 1px solid var(--border);
+    background: var(--white);
+    cursor: default;
+    outline: none;
+    transition:
+        background 0.45s ease,
+        color 0.45s ease,
+        transform 0.45s cubic-bezier(0.22, 1, 0.36, 1),
+        box-shadow 0.45s ease;
+}
+
+.toolbox-card:hover,
+.toolbox-card:focus-visible {
+    background: var(--green);
+    color: var(--white);
+    transform: translateY(-8px);
+    box-shadow: 0 28px 60px rgba(1, 57, 10, 0.18);
+}
+
+.toolbox-card-accent {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 5px;
+    background: var(--green);
+    transition:
+        width 0.55s cubic-bezier(0.22, 1, 0.36, 1),
+        background 0.4s ease;
+}
+
+.toolbox-card:hover .toolbox-card-accent,
+.toolbox-card:focus-visible .toolbox-card-accent {
+    width: 100%;
+    background: var(--white);
+}
+
+.toolbox-card-index {
+    position: absolute;
+    top: 26px;
+    right: 28px;
+    z-index: 3;
+    color: rgba(17, 20, 17, 0.42);
+    font-size: 9px;
+    font-weight: 300;
+    letter-spacing: 0.16em;
+    transition: color 0.4s ease;
+}
+
+.toolbox-card:hover .toolbox-card-index,
+.toolbox-card:focus-visible .toolbox-card-index {
+    color: rgba(255, 255, 255, 0.55);
+}
+
+/* LARGE ABBREVIATION */
+
+.toolbox-abbreviation {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: flex-end;
+    padding: 35px;
+    overflow: hidden;
+    border-right: 1px solid var(--border);
+    color: rgba(1, 57, 10, 0.08);
+    font-size: clamp(8rem, 17vw, 18rem);
+    font-weight: 700;
+    line-height: 0.7;
+    letter-spacing: -0.12em;
+    transform-origin: left bottom;
+    transition:
+        color 0.45s ease,
+        border-color 0.45s ease;
+    will-change: transform;
+}
+
+.toolbox-card:hover .toolbox-abbreviation,
+.toolbox-card:focus-visible .toolbox-abbreviation {
+    border-color: rgba(255, 255, 255, 0.18);
+    color: rgba(255, 255, 255, 0.08);
+}
+
+/* CARD CONTENT */
+
+.toolbox-card-content {
+    position: relative;
+    z-index: 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: end;
+    gap: 55px;
+    padding: 55px 55px 45px;
+}
+
+.toolbox-card-heading {
+    align-self: start;
+}
+
+.toolbox-role {
+    margin-bottom: 18px;
+    color: rgba(17, 20, 17, 0.48);
+    font-size: 9px;
+    font-weight: 400;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    transition: color 0.4s ease;
+}
+
+.toolbox-card:hover .toolbox-role,
+.toolbox-card:focus-visible .toolbox-role {
+    color: rgba(255, 255, 255, 0.58);
+}
+
+.toolbox-card-heading h3 {
+    max-width: 650px;
+    font-size: clamp(2.7rem, 5vw, 6.2rem);
+    font-weight: 700;
+    line-height: 0.88;
+    letter-spacing: -0.06em;
+    text-transform: uppercase;
+}
+
+.toolbox-description {
+    align-self: center;
+    max-width: 430px;
+    color: rgba(17, 20, 17, 0.66);
+    font-size: clamp(14px, 1.25vw, 18px);
+    font-weight: 300;
+    line-height: 1.65;
+    transition: color 0.4s ease;
+}
+
+.toolbox-card:hover .toolbox-description,
+.toolbox-card:focus-visible .toolbox-description {
+    color: rgba(255, 255, 255, 0.78);
+}
+
+.toolbox-skills {
+    grid-column: 1 / -1;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    list-style: none;
+}
+
+.toolbox-skills li {
+    border: 1px solid var(--border);
+    border-radius: 100px;
+    padding: 11px 15px;
+    color: rgba(17, 20, 17, 0.68);
+    font-size: 9px;
+    font-weight: 400;
+    letter-spacing: 0.11em;
+    text-transform: uppercase;
+    transition:
+        color 0.4s ease,
+        border-color 0.4s ease,
+        transform 0.3s ease;
+}
+
+.toolbox-card:hover .toolbox-skills li,
+.toolbox-card:focus-visible .toolbox-skills li {
+    border-color: rgba(255, 255, 255, 0.3);
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.toolbox-card:hover .toolbox-skills li:hover {
+    transform: translateY(-3px);
+}
+
+/* CLOSING LINE */
+
+.toolbox-closing {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 95px;
+    padding-top: 26px;
+    border-top: 1px solid var(--border);
+}
+
+.toolbox-closing p {
+    max-width: 760px;
+    font-size: clamp(2.3rem, 4.5vw, 5.3rem);
+    font-weight: 700;
+    line-height: 0.92;
+    letter-spacing: -0.06em;
+    text-align: right;
+    text-transform: uppercase;
+}
+
+.toolbox-closing span {
+    display: block;
+    color: transparent;
+    -webkit-text-stroke: 1.4px var(--green);
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 1050px) {
+
+    .toolbox-header {
+        grid-template-columns: 1fr;
+    }
+
+    .toolbox-card {
+        grid-template-columns: 180px minmax(0, 1fr);
+    }
+
+    .toolbox-card-content {
+        grid-template-columns: 1fr;
+    }
+
+    .toolbox-skills {
+        grid-column: 1;
+    }
+
+    .toolbox-abbreviation {
+        padding: 25px;
+        font-size: clamp(7rem, 18vw, 12rem);
+    }
+}
+
+@media (max-width: 700px) {
+
+    .toolbox-section {
+        padding: 85px 20px;
+    }
+
+    .toolbox-section::before,
+    .toolbox-section::after {
+        display: none;
+    }
+
+    .toolbox-topline {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 9px;
+        margin-bottom: 50px;
+    }
+
+    .toolbox-header {
+        margin-bottom: 50px;
+    }
+
+    .toolbox-title {
+        font-size: clamp(3.8rem, 18vw, 6rem);
+    }
+
+    .toolbox-progress {
+        margin-bottom: 22px;
+    }
+
+    .toolbox-card {
+        min-height: 0;
+        grid-template-columns: 1fr;
+    }
+
+    .toolbox-abbreviation {
+        min-height: 210px;
+        align-items: flex-end;
+        padding: 22px;
+        border-right: 0;
+        border-bottom: 1px solid var(--border);
+        font-size: clamp(8rem, 45vw, 13rem);
+    }
+
+    .toolbox-card:hover .toolbox-abbreviation,
+    .toolbox-card:focus-visible .toolbox-abbreviation {
+        border-bottom-color: rgba(255, 255, 255, 0.18);
+    }
+
+    .toolbox-card-content {
+        gap: 28px;
+        padding: 35px 22px 28px;
+    }
+
+    .toolbox-card-heading h3 {
+        font-size: clamp(2.4rem, 12vw, 4.4rem);
+    }
+
+    .toolbox-closing {
+        margin-top: 70px;
+    }
+
+    .toolbox-closing p {
+        text-align: left;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+    .toolbox-card,
+    .toolbox-abbreviation,
+    .toolbox-card-accent {
+        transition: none;
+    }
+}
+JavaScript
+Add this inside your existing DOMContentLoaded function, near the bottom before the final });.
+
+/* -------------------------------
+   CREATIVE TOOLBOX
+-------------------------------- */
+
+const toolboxCards =
+    document.querySelectorAll(".toolbox-card");
+
+const toolboxProgressItems =
+    document.querySelectorAll(
+        ".toolbox-progress-item"
+    );
+
+toolboxCards.forEach((card, index) => {
+
+    const abbreviation =
+        card.querySelector(
+            ".toolbox-abbreviation"
+        );
+
+    card.addEventListener(
+        "mousemove",
+        (event) => {
+
+            if (
+                !window.matchMedia(
+                    "(pointer: fine)"
+                ).matches
+            ) {
+                return;
+            }
+
+            const bounds =
+                card.getBoundingClientRect();
+
+            const percentX =
+                (
+                    event.clientX -
+                    bounds.left
+                ) /
+                bounds.width -
+                0.5;
+
+            const percentY =
+                (
+                    event.clientY -
+                    bounds.top
+                ) /
+                bounds.height -
+                0.5;
+
+            if (
+                abbreviation &&
+                typeof gsap !== "undefined"
+            ) {
+
+                gsap.to(
+                    abbreviation,
+                    {
+                        x: percentX * 22,
+                        y: percentY * 14,
+                        rotate: percentX * 2,
+                        duration: 0.7,
+                        ease: "power2.out"
+                    }
+                );
+
+            }
+
+        }
+    );
+
+    card.addEventListener(
+        "mouseleave",
+        () => {
+
+            if (
+                abbreviation &&
+                typeof gsap !== "undefined"
+            ) {
+
+                gsap.to(
+                    abbreviation,
+                    {
+                        x: 0,
+                        y: 0,
+                        rotate: 0,
+                        duration: 0.8,
+                        ease: "power3.out"
+                    }
+                );
+
+            }
+
+        }
+    );
+
+    card.addEventListener(
+        "mouseenter",
+        () => {
+
+            toolboxProgressItems.forEach(
+                (item, itemIndex) => {
+
+                    item.classList.toggle(
+                        "active",
+                        itemIndex === index
+                    );
+
+                }
+            );
+
+        }
+    );
+
+});
+
+/* TOOLBOX SCROLL ANIMATIONS */
+
+if (
+    typeof gsap !== "undefined" &&
+    typeof ScrollTrigger !== "undefined"
+) {
+
+    gsap.from(".toolbox-topline", {
+        y: 25,
+        opacity: 0,
+        duration: 0.75,
+
+        scrollTrigger: {
+            trigger: ".toolbox-section",
+            start: "top 82%"
+        }
+    });
+
+    gsap.from(".toolbox-title > *", {
+        y: 90,
+        opacity: 0,
+        stagger: 0.12,
+        duration: 0.95,
+        ease: "power4.out",
+
+        scrollTrigger: {
+            trigger: ".toolbox-header",
+            start: "top 78%"
+        }
+    });
+
+    gsap.from(".toolbox-card", {
+        y: 75,
+        opacity: 0,
+        stagger: 0.14,
+        duration: 0.9,
+        ease: "power3.out",
+
+        scrollTrigger: {
+            trigger: ".toolbox-list",
+            start: "top 84%"
+        }
+    });
+
+    gsap.from(".toolbox-closing p", {
+        y: 50,
+        opacity: 0,
+        duration: 0.9,
+        ease: "power3.out",
+
+        scrollTrigger: {
+            trigger: ".toolbox-closing",
+            start: "top 88%"
+        }
+    });
+
+}
+One correction: because the title is plain text plus one <span>, replace this selector:
+
+gsap.from(".toolbox-title > *", {
+with:
+
+gsap.from(
+    ".toolbox-kicker, .toolbox-title, .toolbox-intro",
+    {
+and close it normally. The corrected animation block is:
+
+gsap.from(
+    ".toolbox-kicker, .toolbox-title, .toolbox-intro",
+    {
+        y: 90,
+        opacity: 0,
+        stagger: 0.12,
+        duration: 0.95,
+        ease: "power4.out",
+
+        scrollTrigger: {
+            trigger: ".toolbox-header",
+            start: "top 78%"
+        }
+    }
+);
+
+what other term for portfolio of T-Jay
+
+Since you're applying as a Senior Layout Artist and your website is designed like an editorial publication, I'd avoid the generic "Portfolio of T-Jay". Instead, use something that feels like the cover of a magazine or newspaper.
+
+Here are some ideas, ranked from my favorites:
+
+Editorial / Magazine Style ⭐⭐⭐⭐⭐
+1. The Works of T-Jay
+Simple, timeless, and professional.
+
+THE WORKS OF
+T-JAY LUKE GAPUSAN
+2. Selected Works
+The standard used by many designers.
+
+SELECTED WORKS
+
+T-JAY LUKE GAPUSAN
+3. Collected Works
+Feels like an exhibition or design archive.
+
+COLLECTED WORKS
+
+2024–2026
+4. Design Archive
+Fits your clean editorial theme.
+
+DESIGN ARCHIVE
+
+T-JAY LUKE GAPUSAN
+5. Editor's Copy
+Very fitting for Sirmata.
+
+EDITOR'S COPY
+
+by T-Jay Luke Gapusan
+Publication-Inspired ⭐⭐⭐⭐⭐
+6. Applicant's Edition ⭐ (My favorite)
+Like a special issue of a publication.
+
+APPLICANT'S EDITION
+
+Senior Layout Artist
+SIRMATA
+7. Portfolio Issue No. 001
+PORTFOLIO
+
+ISSUE 001
+
+T-JAY LUKE GAPUSAN
+8. Layout Files
+LAYOUT FILES
+
+2024–2026
+9. Visual Stories
+VISUAL STORIES
+
+by T-Jay Luke Gapusan
+10. Inside the Layout
+INSIDE THE LAYOUT
+Very creative and memorable.
+
+Minimal Modern ⭐⭐⭐⭐⭐
+T-JAY LUKE GAPUSAN
+
+Layout Artist
+Sometimes the simplest approach has the strongest impact.
+
+If you want it to feel like an actual Sirmata publication
+SPECIAL EDITION
+
+Featuring
+
+T-JAY LUKE GAPUSAN
+
+Senior Layout Artist Applicant
+My top recommendation
+Since you've built the website to resemble an editorial publication and you're applying to Sirmata, I'd use:
+
+APPLICANT'S EDITION
+
+Selected Works of
+
+T-JAY LUKE GAPUSAN
+or even more minimal:
+
+SELECTED WORKS
+
+T-JAY LUKE GAPUSAN
+It feels authentic to a publication, matches your website's aesthetic, and avoids sounding like a generic online portfolio.
+
+
+Today 12:59 PM
+lets move on to contact tab
+
+For the Contact tab, I recommend ending the portfolio like the back cover of a magazine—clean, memorable, and direct.
+
+Suggested concept
+Main heading
+NEXT ISSUE?
+Then:
+
+Let’s create something worth publishing.
+Below it, include:
+
+Email
+
+Facebook
+
+Phone number
+
+Resume button
+
+Optional QR code
+
+Your application role
+
+Recommended content
+CONTACT / FINAL PAGE
+
+NEXT ISSUE?
+
+Let’s create something worth publishing.
+
+T-Jay Luke Gapusan
+Senior Layout Artist Applicant
+
+Email
+yourname@email.com
+
+Facebook
+facebook.com/yourprofile
+
+Phone
+09XX XXX XXXX
+
+[ DOWNLOAD RESUME ]
+At the bottom:
+
+Designed and developed by
+T-Jay Luke Gapusan
+
+2026
+Visual direction
+The section can use:
+
+dark green background
+
+oversized white typography
+
+animated contact links
+
+magnetic buttons
+
+moving outline text
+
+subtle cursor-follow text
+
+a final marquee line
+
+Example:
+
+AVAILABLE FOR
+LAYOUT • EDITORIAL • PUBLICATION • DESIGN
+Best interaction
+When hovering over:
+
+EMAIL
+the actual email slides in.
+
+When hovering over:
+
+FACEBOOK
+the link moves slightly to the right.
+
+The résumé button can have a magnetic hover effect.
+
+Suggested final wording
+Heading
+NEXT ISSUE?
+Supporting line
+Let’s turn the next story into something worth seeing.
+Closing statement
+I’m ready to contribute ideas, structure, and visual direction to the next issue.
+This feels more personal and publication-focused than a basic “Contact Me” section.
+
+
+okay lets start coding
+
+Add this after the Creative Toolbox section and before your closing </main> or footer.
+
+HTML
+<!-- CONTACT SECTION -->
+<section class="contact-section" id="contact">
+
+    <div class="contact-topline">
+
+        <p class="section-label contact-page-label">
+            Contact / Final Page
+        </p>
+
+        <p class="contact-status">
+            Available for publication work
+        </p>
+
+    </div>
+
+    <div class="contact-heading-wrap">
+
+        <p class="contact-kicker">
+            Ready for the next story
+        </p>
+
+        <h2 class="contact-heading">
+            Next
+            <span>issue?</span>
+        </h2>
+
+    </div>
+
+    <div class="contact-content">
+
+        <div class="contact-introduction">
+
+            <p class="contact-lead">
+                Let’s turn the next story into something
+                worth seeing.
+            </p>
+
+            <p class="contact-copy">
+                I’m ready to contribute ideas, structure, and
+                visual direction to SIRMATA’s future publications.
+            </p>
+
+        </div>
+
+        <div class="contact-details">
+
+            <a
+                href="mailto:your-email@gmail.com"
+                class="contact-link"
+            >
+                <span class="contact-link-label">
+                    Email
+                </span>
+
+                <span class="contact-link-value">
+                    your-email@gmail.com
+                </span>
+
+                <span class="contact-link-arrow">
+                    ↗
+                </span>
+            </a>
+
+            <a
+                href="https://www.facebook.com/your-profile"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="contact-link"
+            >
+                <span class="contact-link-label">
+                    Facebook
+                </span>
+
+                <span class="contact-link-value">
+                    T-Jay Luke Gapusan
+                </span>
+
+                <span class="contact-link-arrow">
+                    ↗
+                </span>
+            </a>
+
+            <a
+                href="tel:+639000000000"
+                class="contact-link"
+            >
+                <span class="contact-link-label">
+                    Phone
+                </span>
+
+                <span class="contact-link-value">
+                    +63 900 000 0000
+                </span>
+
+                <span class="contact-link-arrow">
+                    ↗
+                </span>
+            </a>
+
+        </div>
+
+    </div>
+
+    <div class="contact-action-row">
+
+        <a
+            href="assets/TJay-Luke-Gapusan-Resume.pdf"
+            class="contact-resume-button"
+            target="_blank"
+        >
+            <span>View résumé</span>
+            <span class="contact-button-arrow">↗</span>
+        </a>
+
+        <p class="contact-role">
+            Senior Layout Artist Applicant
+            <span>SIRMATA Publication</span>
+        </p>
+
+    </div>
+
+    <div class="contact-marquee" aria-hidden="true">
+
+        <div class="contact-marquee-track">
+
+            <span>
+                Editorial Design
+            </span>
+
+            <i>•</i>
+
+            <span>
+                Publication Layout
+            </span>
+
+            <i>•</i>
+
+            <span>
+                Visual Storytelling
+            </span>
+
+            <i>•</i>
+
+            <span>
+                Graphic Arts
+            </span>
+
+            <i>•</i>
+
+            <span>
+                Editorial Design
+            </span>
+
+            <i>•</i>
+
+            <span>
+                Publication Layout
+            </span>
+
+            <i>•</i>
+
+            <span>
+                Visual Storytelling
+            </span>
+
+            <i>•</i>
+
+            <span>
+                Graphic Arts
+            </span>
+
+            <i>•</i>
+
+        </div>
+
+    </div>
+
+    <footer class="contact-footer">
+
+        <p>
+            Designed and developed by
+            <strong>T-Jay Luke Gapusan</strong>
+        </p>
+
+        <p>
+            © 2026
+        </p>
+
+        <a href="#hero" class="back-to-top">
+            Back to top
+            <span>↑</span>
+        </a>
+
+    </footer>
+
+</section>
+Replace these placeholders:
+
+your-email@gmail.com
+https://www.facebook.com/your-profile
++63 900 000 0000
+assets/TJay-Luke-Gapusan-Resume.pdf
+CSS
+/* -----------------------------------
+   CONTACT SECTION
+----------------------------------- */
+
+.contact-section {
+    position: relative;
+    min-height: 100vh;
+    padding: 40px 40px 28px;
+    overflow: hidden;
+    background: var(--green);
+    color: var(--white);
+}
+
+.contact-section::before {
+    content: "";
+    position: absolute;
+    top: -20%;
+    right: -10%;
+    width: 55vw;
+    height: 55vw;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+.contact-section::after {
+    content: "";
+    position: absolute;
+    bottom: -35%;
+    left: -15%;
+    width: 50vw;
+    height: 50vw;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+.contact-topline {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    padding-bottom: 18px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.contact-page-label,
+.contact-status {
+    color: rgba(255, 255, 255, 0.64);
+    font-size: 10px;
+    font-weight: 300;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+}
+
+.contact-status {
+    position: relative;
+    padding-left: 18px;
+}
+
+.contact-status::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: var(--white);
+    transform: translateY(-50%);
+    animation: contactStatusPulse 2s ease-in-out infinite;
+}
+
+@keyframes contactStatusPulse {
+    0%,
+    100% {
+        opacity: 0.35;
+        transform: translateY(-50%) scale(0.8);
+    }
+
+    50% {
+        opacity: 1;
+        transform: translateY(-50%) scale(1.15);
+    }
+}
+
+/* HEADING */
+
+.contact-heading-wrap {
+    position: relative;
+    z-index: 2;
+    margin-top: 85px;
+}
+
+.contact-kicker {
+    margin-bottom: 18px;
+    color: rgba(255, 255, 255, 0.58);
+    font-size: 11px;
+    font-weight: 300;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+}
+
+.contact-heading {
+    display: flex;
+    flex-direction: column;
+    max-width: 1150px;
+    font-size: clamp(5rem, 13vw, 13rem);
+    font-weight: 700;
+    line-height: 0.76;
+    letter-spacing: -0.085em;
+    text-transform: uppercase;
+}
+
+.contact-heading span {
+    color: transparent;
+    -webkit-text-stroke: 1.8px rgba(255, 255, 255, 0.9);
+}
+
+/* MAIN CONTENT */
+
+.contact-content {
+    position: relative;
+    z-index: 2;
+    display: grid;
+    grid-template-columns: 1fr 1.25fr;
+    gap: 90px;
+    align-items: end;
+    margin-top: 100px;
+}
+
+.contact-lead {
+    max-width: 620px;
+    font-size: clamp(2.1rem, 4.2vw, 5rem);
+    font-weight: 600;
+    line-height: 0.98;
+    letter-spacing: -0.05em;
+}
+
+.contact-copy {
+    max-width: 490px;
+    margin-top: 28px;
+    color: rgba(255, 255, 255, 0.63);
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.75;
+}
+
+/* CONTACT LINKS */
+
+.contact-details {
+    border-top: 1px solid rgba(255, 255, 255, 0.24);
+}
+
+.contact-link {
+    position: relative;
+    display: grid;
+    grid-template-columns: 130px minmax(0, 1fr) auto;
+    align-items: center;
+    gap: 25px;
+    min-height: 95px;
+    overflow: hidden;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.24);
+    color: var(--white);
+    text-decoration: none;
+}
+
+.contact-link::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: var(--white);
+    transform: translateY(102%);
+    transition: transform 0.45s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.contact-link:hover::before,
+.contact-link:focus-visible::before {
+    transform: translateY(0);
+}
+
+.contact-link-label,
+.contact-link-value,
+.contact-link-arrow {
+    position: relative;
+    z-index: 2;
+    transition:
+        color 0.35s ease,
+        transform 0.45s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.contact-link-label {
+    color: rgba(255, 255, 255, 0.52);
+    font-size: 9px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+}
+
+.contact-link-value {
+    font-size: clamp(1.1rem, 2vw, 2rem);
+    font-weight: 500;
+    letter-spacing: -0.025em;
+}
+
+.contact-link-arrow {
+    padding-right: 8px;
+    font-size: 25px;
+}
+
+.contact-link:hover .contact-link-label,
+.contact-link:hover .contact-link-value,
+.contact-link:hover .contact-link-arrow,
+.contact-link:focus-visible .contact-link-label,
+.contact-link:focus-visible .contact-link-value,
+.contact-link:focus-visible .contact-link-arrow {
+    color: var(--green);
+}
+
+.contact-link:hover .contact-link-value,
+.contact-link:focus-visible .contact-link-value {
+    transform: translateX(12px);
+}
+
+.contact-link:hover .contact-link-arrow,
+.contact-link:focus-visible .contact-link-arrow {
+    transform: translate(3px, -3px);
+}
+
+/* ACTION ROW */
+
+.contact-action-row {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    gap: 40px;
+    margin-top: 95px;
+}
+
+.contact-resume-button {
+    position: relative;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    width: min(100%, 330px);
+    min-height: 78px;
+    padding: 0 26px;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    border-radius: 100px;
+    color: var(--white);
+    font-size: 11px;
+    letter-spacing: 0.15em;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition:
+        color 0.4s ease,
+        transform 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.contact-resume-button::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: var(--white);
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.45s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.contact-resume-button span {
+    position: relative;
+    z-index: 2;
+}
+
+.contact-resume-button:hover,
+.contact-resume-button:focus-visible {
+    color: var(--green);
+    transform: translateY(-4px);
+}
+
+.contact-resume-button:hover::before,
+.contact-resume-button:focus-visible::before {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.contact-button-arrow {
+    font-size: 19px;
+}
+
+.contact-role {
+    color: rgba(255, 255, 255, 0.55);
+    font-size: 10px;
+    line-height: 1.7;
+    letter-spacing: 0.14em;
+    text-align: right;
+    text-transform: uppercase;
+}
+
+.contact-role span {
+    display: block;
+    color: var(--white);
+}
+
+/* MARQUEE */
+
+.contact-marquee {
+    position: relative;
+    z-index: 2;
+    width: calc(100% + 80px);
+    margin-top: 110px;
+    margin-left: -40px;
+    overflow: hidden;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.contact-marquee-track {
+    display: flex;
+    align-items: center;
+    width: max-content;
+    padding: 25px 0;
+    animation: contactMarquee 26s linear infinite;
+}
+
+.contact-marquee-track span {
+    padding: 0 32px;
+    color: transparent;
+    font-size: clamp(2.5rem, 5vw, 6rem);
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: -0.05em;
+    text-transform: uppercase;
+    -webkit-text-stroke: 1px rgba(255, 255, 255, 0.75);
+}
+
+.contact-marquee-track i {
+    color: rgba(255, 255, 255, 0.65);
+    font-size: 20px;
+    font-style: normal;
+}
+
+@keyframes contactMarquee {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+/* FOOTER */
+
+.contact-footer {
+    position: relative;
+    z-index: 2;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    gap: 25px;
+    padding-top: 27px;
+    color: rgba(255, 255, 255, 0.52);
+    font-size: 9px;
+    font-weight: 300;
+    letter-spacing: 0.11em;
+    text-transform: uppercase;
+}
+
+.contact-footer strong {
+    color: var(--white);
+    font-weight: 500;
+}
+
+.back-to-top {
+    justify-self: end;
+    display: inline-flex;
+    align-items: center;
+    gap: 11px;
+    color: var(--white);
+    text-decoration: none;
+}
+
+.back-to-top span {
+    font-size: 16px;
+    transition: transform 0.3s ease;
+}
+
+.back-to-top:hover span {
+    transform: translateY(-5px);
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 950px) {
+
+    .contact-content {
+        grid-template-columns: 1fr;
+        gap: 65px;
+    }
+
+    .contact-action-row {
+        align-items: flex-start;
+    }
+}
+
+@media (max-width: 700px) {
+
+    .contact-section {
+        padding: 28px 20px 24px;
+    }
+
+    .contact-topline {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .contact-heading-wrap {
+        margin-top: 65px;
+    }
+
+    .contact-heading {
+        font-size: clamp(4.5rem, 23vw, 8rem);
+    }
+
+    .contact-content {
+        margin-top: 75px;
+    }
+
+    .contact-link {
+        grid-template-columns: 1fr auto;
+        gap: 12px;
+        min-height: 105px;
+        padding: 18px 0;
+    }
+
+    .contact-link-label {
+        grid-column: 1 / -1;
+    }
+
+    .contact-link-value {
+        overflow-wrap: anywhere;
+    }
+
+    .contact-action-row {
+        flex-direction: column;
+        align-items: stretch;
+        margin-top: 70px;
+    }
+
+    .contact-resume-button {
+        width: 100%;
+    }
+
+    .contact-role {
+        text-align: left;
+    }
+
+    .contact-marquee {
+        width: calc(100% + 40px);
+        margin-top: 80px;
+        margin-left: -20px;
+    }
+
+    .contact-footer {
+        grid-template-columns: 1fr auto;
+    }
+
+    .contact-footer > p:nth-child(2) {
+        text-align: right;
+    }
+
+    .back-to-top {
+        grid-column: 1 / -1;
+        justify-self: start;
+        margin-top: 15px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+    .contact-status::before,
+    .contact-marquee-track {
+        animation: none;
+    }
+
+    .contact-link::before,
+    .contact-link-value,
+    .contact-link-arrow,
+    .contact-resume-button,
+    .contact-resume-button::before {
+        transition: none;
+    }
+}
+JavaScript
+Add this inside your existing JavaScript, after the Creative Toolbox code:
+
+/* --------------------------------
+   CONTACT SECTION
+-------------------------------- */
+
+if (
+    typeof gsap !== "undefined" &&
+    typeof ScrollTrigger !== "undefined"
+) {
+
+    gsap.from(".contact-topline", {
+        y: 25,
+        opacity: 0,
+        duration: 0.8,
+        ease: "power2.out",
+        scrollTrigger: {
+            trigger: ".contact-section",
+            start: "top 82%"
+        }
+    });
+
+    gsap.from(
+        ".contact-kicker, .contact-heading",
+        {
+            y: 100,
+            opacity: 0,
+            stagger: 0.12,
+            duration: 1.05,
+            ease: "power4.out",
+            scrollTrigger: {
+                trigger: ".contact-heading-wrap",
+                start: "top 80%"
+            }
+        }
+    );
+
+    gsap.from(
+        ".contact-lead, .contact-copy",
+        {
+            y: 55,
+            opacity: 0,
+            stagger: 0.12,
+            duration: 0.9,
+            ease: "power3.out",
+            scrollTrigger: {
+                trigger: ".contact-content",
+                start: "top 82%"
+            }
+        }
+    );
+
+    gsap.from(".contact-link", {
+        y: 45,
+        opacity: 0,
+        stagger: 0.1,
+        duration: 0.75,
+        ease: "power3.out",
+        scrollTrigger: {
+            trigger: ".contact-details",
+            start: "top 84%"
+        }
+    });
+
+    gsap.from(
+        ".contact-resume-button, .contact-role",
+        {
+            y: 40,
+            opacity: 0,
+            stagger: 0.12,
+            duration: 0.85,
+            ease: "power3.out",
+            scrollTrigger: {
+                trigger: ".contact-action-row",
+                start: "top 88%"
+            }
+        }
+    );
+
+}
+
+/* MAGNETIC RESUME BUTTON */
+
+const resumeButton =
+    document.querySelector(".contact-resume-button");
+
+if (resumeButton) {
+
+    resumeButton.addEventListener(
+        "mousemove",
+        (event) => {
+
+            if (
+                !window.matchMedia(
+                    "(pointer: fine)"
+                ).matches
+            ) {
+                return;
+            }
+
+            const bounds =
+                resumeButton.getBoundingClientRect();
+
+            const x =
+                event.clientX -
+                bounds.left -
+                bounds.width / 2;
+
+            const y =
+                event.clientY -
+                bounds.top -
+                bounds.height / 2;
+
+            if (typeof gsap !== "undefined") {
+
+                gsap.to(resumeButton, {
+                    x: x * 0.14,
+                    y: y * 0.18,
+                    duration: 0.35,
+                    ease: "power2.out"
+                });
+
+            }
+
+        }
+    );
+
+    resumeButton.addEventListener(
+        "mouseleave",
+        () => {
+
+            if (typeof gsap !== "undefined") {
+
+                gsap.to(resumeButton, {
+                    x: 0,
+                    y: 0,
+                    duration: 0.65,
+                    ease: "elastic.out(1, 0.35)"
+                });
+
+            }
+
+        }
+    );
+
+}
+
+/* SMOOTH BACK TO TOP */
+
+const backToTop =
+    document.querySelector(".back-to-top");
+
+if (backToTop) {
+
+    backToTop.addEventListener(
+        "click",
+        (event) => {
+
+            event.preventDefault();
+
+            const hero =
+                document.querySelector("#hero");
+
+            if (hero) {
+
+                hero.scrollIntoView({
+                    behavior: "smooth",
+                    block: "start"
+                });
+
+            } else {
+
+                window.scrollTo({
+                    top: 0,
+                    behavior: "smooth"
+                });
+
+            }
+
+        }
+    );
+
+}
+Make sure your hero section uses:
+
+<section id="hero">
+Also update the navigation contact link to:
+
+<a href="#contact">Contact</a>
+
+Screenshot 2026-07-16 at 1.07.38 PM.png
+fix this: it should adapt to page size
+
+The issue is that your layout is using fixed widths for the circles, so they overflow instead of adapting to the viewport. The entire section should be responsive by using CSS Grid (or Flexbox with wrapping) instead of fixed positioning.
+
+Replace your container with this
+.practice-section {
+    display: grid;
+    grid-template-columns: 1.1fr 1.4fr;
+    gap: clamp(2rem, 5vw, 6rem);
+    align-items: start;
+}
+
+.practice-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 1.5rem;
+    width: 100%;
+}
+Make every circle responsive
+Instead of:
+
+.practice-item{
+    width:180px;
+    height:220px;
+}
+use
+
+.practice-item{
+    aspect-ratio: 3 / 4;
+    width:100%;
+    border:1px solid #d8d8d8;
+    border-radius:999px;
+    position:relative;
+}
+The aspect-ratio keeps the shape while allowing the width to shrink or grow.
+
+Responsive typography
+.practice-title{
+    font-size:clamp(3rem,7vw,7rem);
+    line-height:.9;
+}
+
+.practice-label{
+    font-size:clamp(.7rem,.8vw,.9rem);
+}
+Tablet breakpoint
+@media (max-width:1200px){
+
+    .practice-section{
+        grid-template-columns:1fr;
+    }
+
+    .practice-grid{
+        grid-template-columns:repeat(3,1fr);
+    }
+
+}
+Mobile
+@media (max-width:768px){
+
+    .practice-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+}
+Even better (recommended)
+Looking at your screenshot, six equal pills don't create much visual rhythm. Since your portfolio is editorial, I'd redesign them as a masonry-style layout with different widths while still remaining responsive:
+
+Graphic Design      Publication Materials
+
+      Typography
+
+Photo Manipulation      Logo Design
+
+          Page Layout
+Each pill would span a different number of grid columns using CSS Grid:
+
+.practice-grid{
+    display:grid;
+    grid-template-columns:repeat(12,1fr);
+    gap:1.5rem;
+}
+
+.graphic{
+    grid-column:span 3;
+}
+
+.publication{
+    grid-column:span 4;
+}
+
+.typography{
+    grid-column:span 2;
+}
+
+.photo{
+    grid-column:span 3;
+}
+
+.logo{
+    grid-column:span 2;
+}
+
+.layout{
+    grid-column:span 4;
+}
+
+@media (max-width:900px){
+
+    .practice-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .practice-grid > *{
+        grid-column:span 1 !important;
+    }
+
+}
+This preserves the editorial feel on desktop while automatically collapsing into a clean two-column layout on tablets and phones. It also eliminates the large empty gaps visible in your current design.
+
+
+
+Pasted code(1).css
+File
+give full modified code: 
+
+
+Pasted code(2).css
+File
+
+
+Pasted code.css
+File
+
+I only received your CSS file again, but your message doesn't include what you want me to do with it. 
+
+
+Can you tell me the specific task? For example:
+
+Fix a layout bug
+
+Make a section responsive
+
+Improve the design
+
+Add animations
+
+Review/optimize the CSS
+
+Continue building the portfolio
+
+If you're referring to the "What I Bring to the Page" section from earlier, please upload or paste the HTML for that section as well. CSS alone isn't enough to modify the layout correctly because the HTML structure determines how the responsive grid should work.
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Portfolio of T-Jay Luke Gapusan, a student layout artist and graphic designer.">
+
+    <title>T-Jay Gapusan | Layout Artist</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- Custom Cursor -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <!-- Loading Screen -->
+    <div class="loader" id="loader">
+
+        <div class="loader-top">
+            <span>PORTFOLIO / 2026</span>
+            <span>LAYOUT ARTIST</span>
+        </div>
+
+        <div class="loader-content">
+
+            <p class="loader-label">
+                Preparing the issue
+            </p>
+
+            <div class="loader-title" aria-label="Sirmata">
+                <span>S</span>
+                <span>I</span>
+                <span>R</span>
+                <span>M</span>
+                <span>A</span>
+                <span>T</span>
+                <span>A</span>
+            </div>
+
+            <div class="loader-progress">
+                <div class="loader-progress-bar"></div>
+            </div>
+
+            <p class="loader-number">
+                <span id="loaderPercent">0</span>%
+            </p>
+
+        </div>
+
+    </div>
+
+    <main class="site">
+
+        <!-- Navigation -->
+        <header class="navbar">
+
+            <a href="#home" class="logo">
+                TJ<span>.</span>
+            </a>
+
+            <nav class="nav-links">
+                <a href="#about">About</a>
+                <a href="#works">Works</a>
+                <a href="#process">Creative Toolbox</a>
+                <a href="#contact">Contact</a>
+            </nav>
+
+            <button class="menu-button" type="button" aria-label="Open navigation menu">
+                Menu
+            </button>
+
+        </header>
+
+        <!-- Hero -->
+        <section class="hero" id="home">
+
+            <div class="hero-grid">
+
+                <div class="hero-number">
+                    <span>ISSUE</span>
+                    <strong>001</strong>
+                </div>
+
+                <div class="hero-introduction">
+                    <span>Student Designer</span>
+                    <span>Based in Ilocos Norte</span>
+                </div>
+
+                <div class="hero-main">
+
+                    <p class="hero-kicker">
+                        Design Archive
+                    </p>
+
+                    <h1 class="hero-title">
+
+                        <span class="hero-line hero-line-bold">
+                            T-JAY LUKE
+                        </span>
+
+                        <span class="hero-line hero-line-outline">
+                            GAPUSAN
+                        </span>
+
+                    </h1>
+
+                    <div class="hero-role">
+
+                        <span class="hero-role-line"></span>
+
+                        <p>
+                            Layout Artist
+                            <span>&amp;</span>
+                            Visual Storyteller
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="hero-description">
+
+                    <p>
+                        I turn blank pages into visual stories through
+                        typography, composition, hierarchy, and carefully
+                        aligned elements.
+                    </p>
+
+                </div>
+
+                <a href="#works" class="hero-button">
+
+                    <span>Explore selected works</span>
+
+                    <span class="button-arrow">
+                        ↘
+                    </span>
+
+                </a>
+
+            </div>
+
+            <div class="hero-orbit" aria-hidden="true">
+
+                <div class="orbit-circle"></div>
+
+                <p>
+                    DESIGN • LAYOUT • TYPOGRAPHY •
+                </p>
+
+            </div>
+
+            <div class="scroll-indicator" aria-hidden="true">
+
+                <span>Scroll to read</span>
+
+                <div class="scroll-line"></div>
+
+            </div>
+
+        </section>
+
+        <!-- Moving Text -->
+        <section class="marquee-section">
+
+            <div class="marquee">
+
+                <div class="marquee-track">
+
+                    <span>EDITORIAL DESIGN</span>
+                    <span>VISUAL HIERARCHY</span>
+                    <span>PUBLICATION LAYOUT</span>
+                    <span>TYPOGRAPHY</span>
+                    <span>CREATIVE DIRECTION</span>
+
+                    <span>EDITORIAL DESIGN</span>
+                    <span>VISUAL HIERARCHY</span>
+                    <span>PUBLICATION LAYOUT</span>
+                    <span>TYPOGRAPHY</span>
+                    <span>CREATIVE DIRECTION</span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- About -->
+        <section class="about-section" id="about">
+
+            <div class="about-topline">
+
+                <p class="section-label about-label">
+                    About / Page 01
+                </p>
+
+                <p class="about-edition">
+                    SIRMATA Qualifying Examination Edition • 2026
+                </p>
+
+            </div>
+
+            <div class="about-layout">
+
+                <div class="about-heading">
+
+                    <p class="about-kicker">
+                        Behind the layouts
+                    </p>
+
+                    <h2 class="about-title">
+
+                        <span class="about-title-solid">
+                            Who is
+                        </span>
+
+                        <span class="about-title-outline">
+                            T-Jay?
+                        </span>
+
+                    </h2>
+
+                </div>
+
+                <div class="about-portrait-column">
+
+                    <div class="about-image-wrap">
+
+                        <img src="images/profile.jpg" alt="Portrait of T-Jay Luke Gapusan" class="about-image"
+                            loading="lazy">
+
+                        <div class="about-image-overlay"></div>
+
+                        <span class="about-image-number">
+                            01
+                        </span>
+
+                    </div>
+
+                    <div class="about-image-caption">
+                        <span>Senior Layout Artist</span>
+                        <span>Pagudpud, Ilocos Norte</span>
+                    </div>
+
+                </div>
+
+                <div class="about-content">
+
+                    <p class="about-introduction">
+                        I am a Level III Information Technology student and
+                        aspiring Senior Layout Artist who enjoys transforming
+                        stories, ideas, and information into visually engaging
+                        designs.
+                    </p>
+
+                    <p class="about-body">
+                        My work focuses on publication materials, page design
+                        and layout, logo design, typography, and visual
+                        storytelling. I pay close attention to hierarchy,
+                        spacing, alignment, and consistency.
+                    </p>
+
+                    <p class="about-body">
+                        Through every project, I continue to explore how design
+                        can communicate meaning, strengthen a message, and help
+                        stories reach their intended audience.
+                    </p>
+
+                    <div class="about-signature">
+
+                        <span class="signature-line"></span>
+
+                        <p>
+                            T-Jay Luke Gapusan
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="about-information">
+
+                <div class="about-info-card">
+
+                    <p class="about-info-label">
+                        Current Status
+                    </p>
+
+                    <h3>
+                        BS Information Technology III
+                    </h3>
+
+                    <p>
+                        Developing creative design and technical skills.
+                    </p>
+
+                </div>
+
+                <div class="about-info-card">
+
+                    <p class="about-info-label">
+                        Experience
+                    </p>
+
+                    <h3>
+                        Junior Layout Artist
+                    </h3>
+
+                    <p>
+                        Academic Year 2024–2025
+                    </p>
+
+                    <h3 class="secondary-experience">
+                        Senior Layout Artist
+                    </h3>
+
+                    <p>
+                        Academic Year 2025–2026
+                    </p>
+
+                </div>
+
+                <div class="about-info-card">
+
+                    <p class="about-info-label">
+                        Design Focus
+                    </p>
+
+                    <h3>
+                        Editorial &amp; Visual Communication
+                    </h3>
+
+                    <p>
+                        Combining typography, hierarchy, composition, and
+                        storytelling.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="about-skills">
+
+                <div class="about-skills-heading">
+
+                    <p class="about-info-label">
+                        Areas of Practice
+                    </p>
+
+                    <h3>
+                        What I bring to the page.
+                    </h3>
+
+                </div>
+
+                <div class="skill-tags">
+                    <span>Graphic Design</span>
+                    <span>Publication Materials</span>
+                    <span>Typography</span>
+                    <span>Photo Manipulation</span>
+                    <span>Logo Design</span>
+                    <span>Page Design and Layout</span>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Works -->
+        <section class="works-section" id="works">
+
+            <div class="works-header">
+
+                <div>
+
+                    <p class="section-label">
+                        Selected Works / 02
+                    </p>
+
+                    <h2 class="works-title">
+                        Stories I've
+                        <span>designed.</span>
+                    </h2>
+
+                </div>
+
+                <p class="works-intro">
+                    A selected collection of publication materials,
+                    graphic artworks, newspaper designs, and identity work.
+                </p>
+
+            </div>
+
+            <!-- Filters -->
+            <div class="category-filter" aria-label="Project categories">
+
+                <button class="filter-button active" data-filter="all" type="button">
+                    All
+                </button>
+
+                <button class="filter-button" data-filter="holiday" type="button">
+                    Holiday Pubmats
+                </button>
+
+                <button class="filter-button" data-filter="devcomm" type="button">
+                    Dev Comm / Feature
+                </button>
+
+                <button class="filter-button" data-filter="logo" type="button">
+                    Logo Design
+                </button>
+
+                <button class="filter-button" data-filter="unigames" type="button">
+                    UniGames 2025
+                </button>
+
+                <button class="filter-button" data-filter="pasuc" type="button">
+                    PASUC 1 / SCUAA 1
+                </button>
+
+            </div>
+
+            <!-- Generated by JavaScript -->
+            <div class="project-collection" id="projectCollection"></div>
+
+        </section>
+
+        <!-- Creative Toolbox -->
+        <section class="toolbox-section" id="process">
+
+            <div class="toolbox-topline">
+
+                <p class="section-label toolbox-label">
+                    Creative Toolbox / Page 03
+                </p>
+
+                <p class="toolbox-edition">
+                    Applications behind the work
+                </p>
+
+            </div>
+
+            <div class="toolbox-header">
+
+                <div>
+
+                    <p class="toolbox-kicker">
+                        The tools I rely on
+                    </p>
+
+                    <h2 class="toolbox-title">
+                        Creative
+                        <span>toolbox.</span>
+                    </h2>
+
+                </div>
+
+                <p class="toolbox-intro">
+                    Three applications, each with a specific role in my
+                    design workflow—from page layout and graphic arts to
+                    logo development.
+                </p>
+
+            </div>
+
+            <div class="toolbox-progress" aria-hidden="true">
+
+                <span class="toolbox-progress-item active">
+                    01
+                </span>
+
+                <span class="toolbox-progress-line"></span>
+
+                <span class="toolbox-progress-item">
+                    02
+                </span>
+
+                <span class="toolbox-progress-line"></span>
+
+                <span class="toolbox-progress-item">
+                    03
+                </span>
+
+            </div>
+
+            <div class="toolbox-list">
+
+                <!-- Adobe InDesign -->
+                <article class="toolbox-card" data-tool="indesign" tabindex="0">
+
+                    <div class="toolbox-card-accent"></div>
+
+                    <span class="toolbox-card-index">
+                        01
+                    </span>
+
+                    <div class="toolbox-abbreviation">
+                        ID
+                    </div>
+
+                    <div class="toolbox-card-content">
+
+                        <div class="toolbox-card-heading">
+
+                            <p class="toolbox-role">
+                                Primary Application
+                            </p>
+
+                            <h3>
+                                Adobe InDesign
+                            </h3>
+
+                        </div>
+
+                        <p class="toolbox-description">
+                            My primary application for creating publication
+                            pages, editorial layouts, and print-ready designs.
+                        </p>
+
+                        <ul class="toolbox-skills">
+                            <li>Page Design</li>
+                            <li>Publication Layout</li>
+                            <li>Typography</li>
+                        </ul>
+
+                    </div>
+
+                </article>
+
+                <!-- Adobe Photoshop -->
+                <article class="toolbox-card" data-tool="photoshop" tabindex="0">
+
+                    <div class="toolbox-card-accent"></div>
+
+                    <span class="toolbox-card-index">
+                        02
+                    </span>
+
+                    <div class="toolbox-abbreviation">
+                        PS
+                    </div>
+
+                    <div class="toolbox-card-content">
+
+                        <div class="toolbox-card-heading">
+
+                            <p class="toolbox-role">
+                                Graphic Arts
+                            </p>
+
+                            <h3>
+                                Adobe Photoshop
+                            </h3>
+
+                        </div>
+
+                        <p class="toolbox-description">
+                            Used for creating publication materials, graphic
+                            artworks, photo manipulations, and digital visual
+                            compositions.
+                        </p>
+
+                        <ul class="toolbox-skills">
+                            <li>Graphic Arts</li>
+                            <li>Publication Materials</li>
+                            <li>Photo Manipulation</li>
+                            <li>Image Editing</li>
+                            <li>Visual Compositing</li>
+                        </ul>
+
+                    </div>
+
+                </article>
+
+                <!-- Adobe Illustrator -->
+                <article class="toolbox-card" data-tool="illustrator" tabindex="0">
+
+                    <div class="toolbox-card-accent"></div>
+
+                    <span class="toolbox-card-index">
+                        03
+                    </span>
+
+                    <div class="toolbox-abbreviation">
+                        AI
+                    </div>
+
+                    <div class="toolbox-card-content">
+
+                        <div class="toolbox-card-heading">
+
+                            <p class="toolbox-role">
+                                Logo Design
+                            </p>
+
+                            <h3>
+                                Adobe Illustrator
+                            </h3>
+
+                        </div>
+
+                        <p class="toolbox-description">
+                            Used specifically for creating clean, scalable,
+                            and precise vector logos.
+                        </p>
+
+                        <ul class="toolbox-skills">
+                            <li>Logo Design</li>
+                            <li>Vector Graphics</li>
+                            <li>Brand Marks</li>
+                            <li>Scalable Artwork</li>
+                        </ul>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+            <div class="toolbox-closing">
+
+                <p>
+                    The application changes.
+                    <span>The intention stays clear.</span>
+                </p>
+
+            </div>
+
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section class="contact-section" id="contact">
+
+            <div class="contact-topline">
+
+                <p class="section-label contact-page-label">
+                    Contact / Final Page
+                </p>
+
+                <p class="contact-status">
+                    Available for publication work
+                </p>
+
+            </div>
+
+            <div class="contact-heading-wrap">
+
+                <p class="contact-kicker">
+                    Ready for the next story
+                </p>
+
+                <h2 class="contact-heading">
+                    Next
+                    <span>issue?</span>
+                </h2>
+
+            </div>
+
+            <div class="contact-content">
+
+                <div class="contact-introduction">
+
+                    <p class="contact-lead">
+                        Let’s turn the next story into something
+                        worth seeing.
+                    </p>
+
+                    <p class="contact-copy">
+                        I’m ready to contribute ideas, structure, and
+                        visual direction to SIRMATA’s future publications.
+                    </p>
+
+                </div>
+
+                <div class="contact-details">
+
+                    <a href="mailto:your-email@gmail.com" class="contact-link">
+                        <span class="contact-link-label">
+                            Email
+                        </span>
+
+                        <span class="contact-link-value">
+                            your-email@gmail.com
+                        </span>
+
+                        <span class="contact-link-arrow">
+                            ↗
+                        </span>
+                    </a>
+
+                    <a href="https://www.facebook.com/your-profile" target="_blank" rel="noopener noreferrer"
+                        class="contact-link">
+                        <span class="contact-link-label">
+                            Facebook
+                        </span>
+
+                        <span class="contact-link-value">
+                            T-Jay Luke Gapusan
+                        </span>
+
+                        <span class="contact-link-arrow">
+                            ↗
+                        </span>
+                    </a>
+
+                    <a href="tel:+639000000000" class="contact-link">
+                        <span class="contact-link-label">
+                            Phone
+                        </span>
+
+                        <span class="contact-link-value">
+                            +63 900 000 0000
+                        </span>
+
+                        <span class="contact-link-arrow">
+                            ↗
+                        </span>
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="contact-marquee" aria-hidden="true">
+
+                <div class="contact-marquee-track">
+
+                    <span>
+                        Editorial Design
+                    </span>
+
+                    <i>•</i>
+
+                    <span>
+                        Publication Layout
+                    </span>
+
+                    <i>•</i>
+
+                    <span>
+                        Visual Storytelling
+                    </span>
+
+                    <i>•</i>
+
+                    <span>
+                        Graphic Arts
+                    </span>
+
+                    <i>•</i>
+
+                    <span>
+                        Editorial Design
+                    </span>
+
+                    <i>•</i>
+
+                    <span>
+                        Publication Layout
+                    </span>
+
+                    <i>•</i>
+
+                    <span>
+                        Visual Storytelling
+                    </span>
+
+                    <i>•</i>
+
+                    <span>
+                        Graphic Arts
+                    </span>
+
+                    <i>•</i>
+
+                </div>
+
+            </div>
+
+            <footer class="contact-footer">
+
+                <p>
+                    Designed and developed by
+                    <strong>T-Jay Luke Gapusan</strong>
+                </p>
+
+                <p>
+                    © 2026
+                </p>
+
+                <a href="#hero" class="back-to-top">
+                    Back to top
+                    <span>↑</span>
+                </a>
+
+            </footer>
+
+        </section>
+
+
+        <!-- Full-Screen Artwork Viewer -->
+        <div class="project-lightbox" id="projectLightbox" aria-hidden="true" role="dialog" aria-modal="true"
+            aria-label="Project preview">
+
+            <button class="lightbox-close" id="lightboxClose" type="button" aria-label="Close project preview">
+                Close
+            </button>
+
+            <button class="lightbox-navigation lightbox-previous" id="lightboxPrevious" type="button"
+                aria-label="View previous artwork">
+                ←
+            </button>
+
+            <button class="lightbox-navigation lightbox-next" id="lightboxNext" type="button"
+                aria-label="View next artwork">
+                →
+            </button>
+
+            <div class="lightbox-content">
+
+                <div class="lightbox-information">
+
+                    <p class="lightbox-label">
+                        Selected Work
+                    </p>
+
+                    <h3 id="lightboxTitle">
+                        Project Title
+                    </h3>
+
+                    <p id="lightboxDescription" class="lightbox-description">
+                        Project description
+                    </p>
+
+                    <p id="lightboxCounter" class="lightbox-counter">
+                        01 / 13
+                    </p>
+
+                </div>
+
+                <div class="lightbox-image-stage">
+
+                    <div class="lightbox-image-wrap">
+
+                        <img src="" alt="" id="lightboxImage" class="lightbox-image">
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+</body>
+
+</html>
+
+Now that the HTML structure is clear, you do not need to create a separate section. The responsive fix should be applied directly to your existing .about-skills and .skill-tags elements. Your current stylesheet uses a wrapping flex layout, which causes inconsistent pill widths and poor scaling on wide and narrow screens. 
+
+
+Replace this existing CSS block:
+
+.about-skills {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 50px;
+    margin-top: 100px;
+}
+
+.about-skills-heading h3 {
+    font-size: clamp(2.3rem, 4vw, 4.5rem);
+    line-height: 0.95;
+    text-transform: uppercase;
+}
+
+.skill-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.skill-tags span {
+    border: 1px solid var(--border);
+    border-radius: 100px;
+    padding: 15px 20px;
+    font-size: 11px;
+    text-transform: uppercase;
+    transition: 0.3s ease;
+}
+
+.skill-tags span:hover {
+    background: var(--green);
+    color: white;
+    transform: translateY(-4px);
+}
+with this complete responsive version:
+
+/* -----------------------------------
+   AREAS OF PRACTICE
+----------------------------------- */
+
+.about-skills {
+    position: relative;
+    display: grid;
+    grid-template-columns:
+        minmax(280px, 0.8fr)
+        minmax(0, 2fr);
+    align-items: center;
+    gap: clamp(40px, 5vw, 90px);
+    width: 100%;
+    margin-top: clamp(80px, 9vw, 130px);
+    padding-top: clamp(50px, 5vw, 75px);
+    border-top: 1px solid var(--border);
+}
+
+/* LEFT SIDE */
+
+.about-skills-heading {
+    min-width: 0;
+}
+
+.about-skills-heading .about-info-label {
+    margin-bottom: clamp(28px, 3vw, 45px);
+}
+
+.about-skills-heading h3 {
+    max-width: 650px;
+    font-size: clamp(3rem, 5.1vw, 6.4rem);
+    font-weight: 700;
+    line-height: 0.88;
+    letter-spacing: -0.065em;
+    text-transform: uppercase;
+}
+
+/* RIGHT SIDE */
+
+.skill-tags {
+    display: grid;
+    grid-template-columns:
+        minmax(90px, 0.85fr)
+        minmax(120px, 1.1fr)
+        minmax(90px, 0.8fr)
+        minmax(120px, 1.05fr)
+        minmax(90px, 0.8fr)
+        minmax(130px, 1.15fr);
+    align-items: center;
+    gap: clamp(8px, 0.85vw, 16px);
+    width: 100%;
+    min-width: 0;
+}
+
+/* PRACTICE PILLS */
+
+.skill-tags span {
+    position: relative;
+    width: 100%;
+    min-width: 0;
+    aspect-ratio: 0.76 / 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    overflow: hidden;
+    padding:
+        clamp(23px, 2vw, 34px)
+        clamp(8px, 1vw, 16px);
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    background: transparent;
+    color: var(--ink);
+    font-size: clamp(9px, 0.72vw, 14px);
+    font-weight: 400;
+    line-height: 1.15;
+    letter-spacing: -0.015em;
+    text-align: center;
+    text-transform: uppercase;
+    overflow-wrap: anywhere;
+    transition:
+        color 0.4s ease,
+        border-color 0.4s ease,
+        background 0.4s ease,
+        transform 0.4s cubic-bezier(0.22, 1, 0.36, 1),
+        box-shadow 0.4s ease;
+}
+
+/* Slightly wider pills for longer text */
+
+.skill-tags span:nth-child(2),
+.skill-tags span:nth-child(4),
+.skill-tags span:nth-child(6) {
+    aspect-ratio: 0.92 / 1;
+}
+
+/* HOVER */
+
+.skill-tags span:hover {
+    border-color: var(--green);
+    background: var(--green);
+    color: var(--white);
+    transform: translateY(-9px);
+    box-shadow: 0 20px 45px rgba(1, 57, 10, 0.14);
+}
+
+/* LARGE SCREENS */
+
+@media (min-width: 1600px) {
+
+    .about-skills {
+        grid-template-columns:
+            minmax(420px, 0.9fr)
+            minmax(0, 2.1fr);
+    }
+
+    .skill-tags {
+        gap: 18px;
+    }
+
+    .skill-tags span {
+        max-height: 390px;
+    }
+}
+
+/* SMALL DESKTOP AND LAPTOP */
+
+@media (max-width: 1350px) {
+
+    .about-skills {
+        grid-template-columns:
+            minmax(290px, 0.8fr)
+            minmax(0, 1.5fr);
+        gap: 45px;
+    }
+
+    .skill-tags {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 14px;
+    }
+
+    .skill-tags span,
+    .skill-tags span:nth-child(2),
+    .skill-tags span:nth-child(4),
+    .skill-tags span:nth-child(6) {
+        min-height: 230px;
+        aspect-ratio: 0.95 / 1;
+    }
+
+    .skill-tags span {
+        font-size: clamp(10px, 1vw, 14px);
+    }
+}
+
+/* TABLET */
+
+@media (max-width: 1000px) {
+
+    .about-skills {
+        grid-template-columns: 1fr;
+        align-items: start;
+        gap: 55px;
+    }
+
+    .about-skills-heading {
+        max-width: 750px;
+    }
+
+    .about-skills-heading h3 {
+        font-size: clamp(3.7rem, 9vw, 6.5rem);
+    }
+
+    .skill-tags {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .skill-tags span,
+    .skill-tags span:nth-child(2),
+    .skill-tags span:nth-child(4),
+    .skill-tags span:nth-child(6) {
+        min-height: 270px;
+        aspect-ratio: 0.9 / 1;
+    }
+
+    .skill-tags span {
+        font-size: clamp(11px, 1.6vw, 15px);
+    }
+}
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+
+    .about-skills {
+        gap: 42px;
+        margin-top: 75px;
+        padding-top: 45px;
+    }
+
+    .about-skills-heading h3 {
+        font-size: clamp(3.1rem, 14vw, 5.3rem);
+        line-height: 0.9;
+    }
+
+    .skill-tags {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 11px;
+    }
+
+    .skill-tags span,
+    .skill-tags span:nth-child(2),
+    .skill-tags span:nth-child(4),
+    .skill-tags span:nth-child(6) {
+        min-height: 225px;
+        aspect-ratio: 0.86 / 1;
+    }
+
+    .skill-tags span {
+        padding: 24px 10px;
+        font-size: clamp(10px, 3vw, 13px);
+    }
+}
+
+/* SMALL MOBILE */
+
+@media (max-width: 400px) {
+
+    .skill-tags {
+        gap: 9px;
+    }
+
+    .skill-tags span,
+    .skill-tags span:nth-child(2),
+    .skill-tags span:nth-child(4),
+    .skill-tags span:nth-child(6) {
+        min-height: 195px;
+    }
+
+    .skill-tags span {
+        padding: 21px 7px;
+        font-size: 9px;
+    }
+}
+
+/* VERY SMALL MOBILE */
+
+@media (max-width: 330px) {
+
+    .skill-tags {
+        grid-template-columns: 1fr;
+    }
+
+    .skill-tags span,
+    .skill-tags span:nth-child(2),
+    .skill-tags span:nth-child(4),
+    .skill-tags span:nth-child(6) {
+        width: min(100%, 230px);
+        min-height: 280px;
+        aspect-ratio: 0.82 / 1;
+        justify-self: center;
+    }
+
+    .skill-tags span {
+        font-size: 12px;
+    }
+}
+
+/* TOUCH DEVICES */
+
+@media (hover: none) {
+
+    .skill-tags span:hover {
+        background: transparent;
+        border-color: var(--border);
+        color: var(--ink);
+        transform: none;
+        box-shadow: none;
+    }
+}
+Keep your existing HTML
+Your current HTML is already structured correctly:
+
+<div class="about-skills">
+
+    <div class="about-skills-heading">
+
+        <p class="about-info-label">
+            Areas of Practice
+        </p>
+
+        <h3>
+            What I bring to the page.
+        </h3>
+
+    </div>
+
+    <div class="skill-tags">
+        <span>Graphic Design</span>
+        <span>Publication Materials</span>
+        <span>Typography</span>
+        <span>Photo Manipulation</span>
+        <span>Logo Design</span>
+        <span>Page Design and Layout</span>
+    </div>
+
+</div>
+The layout will now show six responsive pills in one row on wide screens, three columns on laptops and tablets, two columns on mobile, and one column on very narrow phones.
+
+
+Screenshot 2026-07-16 at 1.21.01 PM.png
+Screenshot 2026-07-16 at 1.21.14 PM.png
+here's what happened
+
+The pills became extremely tall because the previous CSS combined:
+
+aspect-ratio
+with:
+
+min-height: 225px;
+On your mobile viewport, each pill expands according to its width and aspect ratio, producing those oversized capsules.
+
+Your desktop layout is also being forced into one long row because all six items use a six-column grid. The better solution is:
+
+Desktop: six compact responsive pills in one row.
+
+Laptop: three columns.
+
+Tablet/mobile: two columns.
+
+Pills use controlled height instead of an aggressive aspect ratio.
+
+The heading becomes smaller on mobile.
+
+Replace your entire current .about-skills, .about-skills-heading, .skill-tags, and related responsive CSS with this:
+
+/* -----------------------------------
+   AREAS OF PRACTICE
+----------------------------------- */
+
+.about-skills {
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns:
+        minmax(320px, 0.8fr)
+        minmax(0, 2fr);
+    align-items: center;
+    gap: clamp(45px, 5vw, 90px);
+    margin-top: clamp(80px, 9vw, 130px);
+    padding-top: clamp(50px, 5vw, 75px);
+    border-top: 1px solid var(--border);
+}
+
+/* LEFT COLUMN */
+
+.about-skills-heading {
+    min-width: 0;
+}
+
+.about-skills-heading .about-info-label {
+    margin-bottom: clamp(28px, 3vw, 45px);
+}
+
+.about-skills-heading h3 {
+    max-width: 620px;
+    font-size: clamp(3rem, 4.8vw, 6rem);
+    font-weight: 700;
+    line-height: 0.9;
+    letter-spacing: -0.065em;
+    text-transform: uppercase;
+}
+
+/* RIGHT COLUMN */
+
+.skill-tags {
+    width: 100%;
+    min-width: 0;
+    display: grid;
+    grid-template-columns:
+        repeat(6, minmax(0, 1fr));
+    align-items: center;
+    gap: clamp(8px, 0.8vw, 15px);
+}
+
+/* CAPSULES */
+
+.skill-tags span {
+    position: relative;
+    width: 100%;
+    min-width: 0;
+    height: clamp(180px, 15vw, 270px);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    overflow: hidden;
+    padding:
+        clamp(24px, 2vw, 34px)
+        clamp(7px, 0.8vw, 14px);
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    background: transparent;
+    color: var(--ink);
+    font-size: clamp(8px, 0.72vw, 14px);
+    font-weight: 400;
+    line-height: 1.15;
+    letter-spacing: -0.025em;
+    text-align: center;
+    text-transform: uppercase;
+    overflow-wrap: anywhere;
+    transition:
+        background 0.4s ease,
+        border-color 0.4s ease,
+        color 0.4s ease,
+        transform 0.4s cubic-bezier(0.22, 1, 0.36, 1),
+        box-shadow 0.4s ease;
+}
+
+/* Slight width variation */
+
+.skill-tags span:nth-child(2),
+.skill-tags span:nth-child(4),
+.skill-tags span:nth-child(6) {
+    height: clamp(195px, 16vw, 290px);
+}
+
+/* HOVER */
+
+.skill-tags span:hover {
+    border-color: var(--green);
+    background: var(--green);
+    color: var(--white);
+    transform: translateY(-8px);
+    box-shadow: 0 20px 42px rgba(1, 57, 10, 0.14);
+}
+
+/* -----------------------------------
+   LAPTOP
+----------------------------------- */
+
+@media (max-width: 1350px) {
+
+    .about-skills {
+        grid-template-columns:
+            minmax(280px, 0.8fr)
+            minmax(0, 1.6fr);
+        gap: 45px;
+    }
+
+    .skill-tags {
+        grid-template-columns:
+            repeat(3, minmax(0, 1fr));
+        gap: 14px;
+    }
+
+    .skill-tags span,
+    .skill-tags span:nth-child(2),
+    .skill-tags span:nth-child(4),
+    .skill-tags span:nth-child(6) {
+        height: clamp(210px, 22vw, 285px);
+    }
+
+    .skill-tags span {
+        font-size: clamp(10px, 1vw, 14px);
+    }
+}
+
+/* -----------------------------------
+   TABLET
+----------------------------------- */
+
+@media (max-width: 1000px) {
+
+    .about-skills {
+        grid-template-columns: 1fr;
+        align-items: start;
+        gap: 50px;
+    }
+
+    .about-skills-heading {
+        max-width: 780px;
+    }
+
+    .about-skills-heading h3 {
+        max-width: 800px;
+        font-size: clamp(3.8rem, 9vw, 6.5rem);
+    }
+
+    .skill-tags {
+        grid-template-columns:
+            repeat(3, minmax(0, 1fr));
+    }
+
+    .skill-tags span,
+    .skill-tags span:nth-child(2),
+    .skill-tags span:nth-child(4),
+    .skill-tags span:nth-child(6) {
+        height: clamp(220px, 29vw, 300px);
+    }
+
+    .skill-tags span {
+        font-size: clamp(11px, 1.6vw, 15px);
+    }
+}
+
+/* -----------------------------------
+   MOBILE
+----------------------------------- */
+
+@media (max-width: 700px) {
+
+    .about-skills {
+        gap: 38px;
+        margin-top: 70px;
+        padding-top: 42px;
+    }
+
+    .about-skills-heading .about-info-label {
+        margin-bottom: 24px;
+    }
+
+    .about-skills-heading h3 {
+        max-width: 100%;
+        font-size: clamp(2.9rem, 12vw, 4.8rem);
+        line-height: 0.92;
+        letter-spacing: -0.06em;
+    }
+
+    .skill-tags {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+        gap: 10px;
+    }
+
+    .skill-tags span,
+    .skill-tags span:nth-child(2),
+    .skill-tags span:nth-child(4),
+    .skill-tags span:nth-child(6) {
+        height: clamp(180px, 46vw, 235px);
+    }
+
+    .skill-tags span {
+        padding: 25px 9px;
+        font-size: clamp(9px, 2.7vw, 12px);
+    }
+}
+
+/* -----------------------------------
+   SMALL MOBILE
+----------------------------------- */
+
+@media (max-width: 420px) {
+
+    .about-skills-heading h3 {
+        font-size: clamp(2.7rem, 12vw, 4rem);
+    }
+
+    .skill-tags {
+        gap: 8px;
+    }
+
+    .skill-tags span,
+    .skill-tags span:nth-child(2),
+    .skill-tags span:nth-child(4),
+    .skill-tags span:nth-child(6) {
+        height: clamp(165px, 45vw, 205px);
+    }
+
+    .skill-tags span {
+        padding: 22px 7px;
+        font-size: 9px;
+    }
+}
+
+/* -----------------------------------
+   VERY SMALL MOBILE
+----------------------------------- */
+
+@media (max-width: 330px) {
+
+    .skill-tags {
+        grid-template-columns: 1fr;
+    }
+
+    .skill-tags span,
+    .skill-tags span:nth-child(2),
+    .skill-tags span:nth-child(4),
+    .skill-tags span:nth-child(6) {
+        width: min(100%, 220px);
+        height: 250px;
+        justify-self: center;
+    }
+
+    .skill-tags span {
+        font-size: 11px;
+    }
+}
+
+/* TOUCH DEVICES */
+
+@media (hover: none) {
+
+    .skill-tags span:hover {
+        border-color: var(--border);
+        background: transparent;
+        color: var(--ink);
+        transform: none;
+        box-shadow: none;
+    }
+}
+Also remove this older rule from your general mobile breakpoint:
+
+.about-layout,
+.about-information,
+.about-skills {
+    grid-template-columns: 1fr;
+}
+Change it to:
+
+.about-layout,
+.about-information {
+    grid-template-columns: 1fr;
+}
+The new .about-skills media queries already control its responsive layout, so the old grouped rule can interfere with it.
+
+Your current HTML can remain unchanged. This correction will keep the desktop pills compact and prevent the mobile capsules from becoming extremely tall.
+
+
+i dont want that, what I want the way of responsiveness is that, when i resize the page it automatically adopts without having separate codes for laptop and cp etc
+
+
+Pasted code(4).css
+File
+give full corrected code: 
+
+I corrected the full stylesheet using a fluid responsive layout for the “Areas of Practice” section. It now adapts continuously using auto-fit, minmax(), and clamp() instead of separate laptop, tablet, and phone rules. I also removed the older mobile rule that was overriding .about-skills. 
+
+
+style-fluid-responsive.css
+
+Replace your current style.css with the downloaded file. Your existing HTML does not need to be changed. 
+
+
+Screenshot 2026-07-16 at 1.41.49 PM.png
+
+I see why it's happening now.
+
+The issue is not responsiveness anymore—it's the layout itself.
+
+Your heading takes about 45% of the width, while the pills are trying to stay in 6 columns. CSS Grid wraps the last item because there isn't enough horizontal space.
+
+This is exactly what auto-fit is supposed to do.
+
+What I would do instead
+Looking at your portfolio's style (Apple + Editorial), I wouldn't use six equal pills at all.
+
+Instead, I'd make them staggered, like this:
+
+WHAT I BRING
+TO THE PAGE.
+
+          ◜─────────◝
+          Graphic Design
+
+     ◜───────────────◝
+     Publication Materials
+
+           ◜──────◝
+           Typography
+
+        ◜────────────◝
+        Photo Manipulation
+
+           ◜──────◝
+           Logo Design
+
+      ◜──────────────◝
+      Page Design & Layout
+or
+
+WHAT I BRING
+TO THE PAGE.
+
+Graphic Design      Publication Materials
+
+Typography          Photo Manipulation
+
+Logo Design         Page Design & Layout
+This feels much more like an editorial spread.
+
+Or...
+If you want to keep the single row, make the pills scroll horizontally instead of wrapping.
+
+Like Apple's product cards.
+
+WHAT I BRING
+TO THE PAGE.
+
+| Graphic | Publication | Typography | Photo | Logo | Layout |
+The user can scroll sideways while the heading stays fixed.
+
+It looks premium.
+
+My recommendation ⭐⭐⭐⭐⭐
+I actually would remove the pills entirely.
+
+Use something like this instead:
+
+WHAT I BRING
+TO THE PAGE.
+
+
+GRAPHIC DESIGN
+Publication Materials
+Typography
+Photo Manipulation
+Logo Design
+Page Design
+Each word:
+
+huge typography
+
+hover animation
+
+image appears beside it
+
+green underline grows
+
+Very editorial.
+
+It matches your whole portfolio much better than six capsules.
+
+I think we should redesign this section completely.
+The capsules don't match the quality of your Hero, About, Works, or Creative Toolbox sections. They feel like a different website.
+
+I can redesign this section into something that looks like it belongs on an Awwwards-winning portfolio while keeping the same content. I think it'll become one of the strongest sections in your site.
+
+
+okay go
+
+Replace your current Areas of Practice HTML:
+
+<div class="about-skills">
+
+    <div class="about-skills-heading">
+
+        <p class="about-info-label">
+            Areas of Practice
+        </p>
+
+        <h3>
+            What I bring to the page.
+        </h3>
+
+    </div>
+
+    <div class="skill-tags">
+        <span>Graphic Design</span>
+        <span>Publication Materials</span>
+        <span>Typography</span>
+        <span>Photo Manipulation</span>
+        <span>Logo Design</span>
+        <span>Page Design and Layout</span>
+    </div>
+
+</div>
+with this redesigned version:
+
+<!-- AREAS OF PRACTICE -->
+<div class="practice-showcase">
+
+    <div class="practice-showcase-heading">
+
+        <p class="about-info-label">
+            Areas of Practice
+        </p>
+
+        <h3>
+            What I bring
+            <span>to the page.</span>
+        </h3>
+
+        <p class="practice-showcase-intro">
+            A focused set of creative disciplines that shape how I approach
+            publication design, visual storytelling, and layout.
+        </p>
+
+    </div>
+
+    <div class="practice-showcase-list">
+
+        <article class="practice-showcase-item">
+
+            <span class="practice-showcase-number">
+                01
+            </span>
+
+            <h4>
+                Graphic Design
+            </h4>
+
+            <span class="practice-showcase-arrow">
+                ↗
+            </span>
+
+        </article>
+
+        <article class="practice-showcase-item">
+
+            <span class="practice-showcase-number">
+                02
+            </span>
+
+            <h4>
+                Publication Materials
+            </h4>
+
+            <span class="practice-showcase-arrow">
+                ↗
+            </span>
+
+        </article>
+
+        <article class="practice-showcase-item">
+
+            <span class="practice-showcase-number">
+                03
+            </span>
+
+            <h4>
+                Typography
+            </h4>
+
+            <span class="practice-showcase-arrow">
+                ↗
+            </span>
+
+        </article>
+
+        <article class="practice-showcase-item">
+
+            <span class="practice-showcase-number">
+                04
+            </span>
+
+            <h4>
+                Photo Manipulation
+            </h4>
+
+            <span class="practice-showcase-arrow">
+                ↗
+            </span>
+
+        </article>
+
+        <article class="practice-showcase-item">
+
+            <span class="practice-showcase-number">
+                05
+            </span>
+
+            <h4>
+                Logo Design
+            </h4>
+
+            <span class="practice-showcase-arrow">
+                ↗
+            </span>
+
+        </article>
+
+        <article class="practice-showcase-item">
+
+            <span class="practice-showcase-number">
+                06
+            </span>
+
+            <h4>
+                Page Design and Layout
+            </h4>
+
+            <span class="practice-showcase-arrow">
+                ↗
+            </span>
+
+        </article>
+
+    </div>
+
+</div>
+Then remove all existing CSS for:
+
+.about-skills
+.about-skills-heading
+.skill-tags
+.skill-tags span
+and replace it with:
+
+/* -----------------------------------
+   AREAS OF PRACTICE
+----------------------------------- */
+
+.practice-showcase {
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns:
+        repeat(
+            auto-fit,
+            minmax(min(100%, 360px), 1fr)
+        );
+    align-items: start;
+    gap: clamp(3rem, 7vw, 8rem);
+    margin-top: clamp(6rem, 10vw, 10rem);
+    padding-top: clamp(4rem, 6vw, 6rem);
+    border-top: 1px solid var(--border);
+}
+
+/* LEFT SIDE */
+
+.practice-showcase-heading {
+    min-width: 0;
+}
+
+.practice-showcase-heading .about-info-label {
+    margin-bottom: clamp(2rem, 4vw, 4rem);
+}
+
+.practice-showcase-heading h3 {
+    max-width: 760px;
+    font-size: clamp(3.2rem, 6vw, 7.5rem);
+    font-weight: 700;
+    line-height: 0.86;
+    letter-spacing: -0.075em;
+    text-transform: uppercase;
+}
+
+.practice-showcase-heading h3 span {
+    display: block;
+    color: transparent;
+    -webkit-text-stroke: 1.5px var(--green);
+}
+
+.practice-showcase-intro {
+    max-width: 470px;
+    margin-top: clamp(2rem, 3vw, 3.5rem);
+    color: rgba(17, 20, 17, 0.65);
+    font-size: clamp(13px, 1vw, 16px);
+    font-weight: 300;
+    line-height: 1.75;
+}
+
+/* RIGHT SIDE */
+
+.practice-showcase-list {
+    min-width: 0;
+    border-top: 1px solid var(--border);
+}
+
+/* INDIVIDUAL ROW */
+
+.practice-showcase-item {
+    position: relative;
+    min-height: clamp(90px, 9vw, 145px);
+    display: grid;
+    grid-template-columns:
+        clamp(42px, 5vw, 75px)
+        minmax(0, 1fr)
+        auto;
+    align-items: center;
+    gap: clamp(1rem, 2vw, 2.5rem);
+    overflow: hidden;
+    border-bottom: 1px solid var(--border);
+    cursor: default;
+    transition:
+        color 0.4s ease,
+        padding 0.45s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* GREEN BACKGROUND SLIDE */
+
+.practice-showcase-item::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: var(--green);
+    transform: scaleY(0);
+    transform-origin: bottom;
+    transition:
+        transform 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.practice-showcase-item:hover::before {
+    transform: scaleY(1);
+    transform-origin: top;
+}
+
+.practice-showcase-item:hover {
+    color: var(--white);
+    padding-right: clamp(1rem, 2vw, 2rem);
+    padding-left: clamp(1rem, 2vw, 2rem);
+}
+
+/* CONTENT */
+
+.practice-showcase-number,
+.practice-showcase-item h4,
+.practice-showcase-arrow {
+    position: relative;
+    z-index: 2;
+}
+
+.practice-showcase-number {
+    color: rgba(17, 20, 17, 0.42);
+    font-size: 9px;
+    font-weight: 400;
+    letter-spacing: 0.18em;
+    transition: color 0.4s ease;
+}
+
+.practice-showcase-item h4 {
+    font-size: clamp(1.7rem, 3.25vw, 4.5rem);
+    font-weight: 500;
+    line-height: 0.95;
+    letter-spacing: -0.055em;
+    text-transform: uppercase;
+    transition:
+        transform 0.45s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.practice-showcase-arrow {
+    font-size: clamp(1.2rem, 2vw, 2.2rem);
+    transition:
+        transform 0.45s cubic-bezier(0.22, 1, 0.36, 1),
+        color 0.4s ease;
+}
+
+.practice-showcase-item:hover .practice-showcase-number {
+    color: rgba(255, 255, 255, 0.55);
+}
+
+.practice-showcase-item:hover h4 {
+    transform: translateX(clamp(5px, 1vw, 14px));
+}
+
+.practice-showcase-item:hover .practice-showcase-arrow {
+    color: var(--white);
+    transform: translate(5px, -5px);
+}
+
+/* AUTOMATIC FLUID STACKING */
+
+.practice-showcase-list {
+    container-type: inline-size;
+}
+
+@container (max-width: 520px) {
+
+    .practice-showcase-item {
+        grid-template-columns:
+            42px
+            minmax(0, 1fr)
+            auto;
+        min-height: 95px;
+    }
+
+    .practice-showcase-item h4 {
+        font-size: clamp(1.4rem, 7cqw, 2.6rem);
+    }
+}
+
+/* TOUCH DEVICES */
+
+@media (hover: none) {
+
+    .practice-showcase-item:hover {
+        padding-right: 0;
+        padding-left: 0;
+        color: var(--ink);
+    }
+
+    .practice-showcase-item:hover::before {
+        transform: scaleY(0);
+    }
+
+    .practice-showcase-item:hover .practice-showcase-number {
+        color: rgba(17, 20, 17, 0.42);
+    }
+
+    .practice-showcase-item:hover h4,
+    .practice-showcase-item:hover .practice-showcase-arrow {
+        transform: none;
+    }
+}
+
+/* REDUCED MOTION */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .practice-showcase-item,
+    .practice-showcase-item::before,
+    .practice-showcase-item h4,
+    .practice-showcase-arrow {
+        transition: none;
+    }
+}
+Add this GSAP animation inside your existing JavaScript:
+
+/* --------------------------------
+   AREAS OF PRACTICE
+-------------------------------- */
+
+if (
+    typeof gsap !== "undefined" &&
+    typeof ScrollTrigger !== "undefined"
+) {
+
+    gsap.from(
+        ".practice-showcase-heading > *",
+        {
+            y: 55,
+            opacity: 0,
+            stagger: 0.1,
+            duration: 0.85,
+            ease: "power3.out",
+
+            scrollTrigger: {
+                trigger: ".practice-showcase",
+                start: "top 80%"
+            }
+        }
+    );
+
+    gsap.from(
+        ".practice-showcase-item",
+        {
+            y: 45,
+            opacity: 0,
+            stagger: 0.08,
+            duration: 0.75,
+            ease: "power3.out",
+
+            scrollTrigger: {
+                trigger: ".practice-showcase-list",
+                start: "top 84%"
+            }
+        }
+    );
+
+}
+This version automatically changes from two columns to one column based on available space. It does not use separate laptop, tablet, or phone layout rules.
+
+
+Today 3:05 PM
+help me deploy this online show I can send them the qr only to redirect into the site
+
+The easiest option for your portfolio is Netlify Drop. Your site is static HTML, CSS, JavaScript, and images, so no server setup is needed. Netlify allows you to upload the whole project folder or a ZIP and immediately gives you a public HTTPS link. 
+
+1. Prepare your website folder
+Your project should look like this:
+
+tjay-portfolio/
+│
+├── index.html
+├── style.css
+├── script.js
+│
+└── images/
+    ├── profile.jpg
+    ├── artwork-1.jpg
+    ├── artwork-2.jpg
+    └── ...
+Important checks:
+
+Rename your main HTML file to exactly index.html.
+
+Keep filenames lowercase when possible.
+
+Make sure your HTML uses relative paths:
+
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
+<img src="images/profile.jpg" alt="Portrait">
+Do not use paths such as:
+
+<img src="C:\Users\TJay\Desktop\portfolio\images\profile.jpg">
+Also confirm that the case matches exactly:
+
+profile.jpg
+is different from:
+
+Profile.JPG
+on online hosting.
+
+2. Test the folder before uploading
+Open index.html in your browser and check:
+
+All images appear.
+
+Filters work.
+
+The fullscreen artwork viewer works.
+
+Animations load.
+
+Contact links work.
+
+There are no missing files.
+
+Your GSAP links can remain as they are because they load from a CDN.
+
+3. Upload through Netlify
+Open Netlify Drop, sign in, and drag the entire tjay-portfolio folder or its ZIP file into the upload area. Netlify will publish it and provide a link similar to:
+
+https://random-name-12345.netlify.app
+Netlify officially supports dragging in a project folder, ZIP file, or HTML file for immediate deployment. 
+
+4. Change the website address
+Inside your Netlify project:
+
+Open Site configuration.
+
+Find Site details or Change site name.
+
+Choose a clean name, such as:
+
+tjay-gapusan-portfolio
+Your URL would become:
+
+https://tjay-gapusan-portfolio.netlify.app
+Choose something professional, for example:
+
+tjay-gapusan-design
+tjay-layout-portfolio
+tjay-visual-archive
+tjay-selected-works
+5. Fix the Back to Top link
+Your HTML currently contains:
+
+<a href="#hero" class="back-to-top">
+However, your hero section uses:
+
+<section class="hero" id="home">
+Change the link to:
+
+<a href="#home" class="back-to-top">
+Otherwise, the link may not return to the top correctly.
+
+6. Replace your contact placeholders
+Before deploying, update these:
+
+mailto:your-email@gmail.com
+https://www.facebook.com/your-profile
+tel:+639000000000
+Also replace the displayed values:
+
+<span class="contact-link-value">
+    your-email@gmail.com
+</span>
+Use this phone format:
+
+<a href="tel:+639123456789" class="contact-link">
+<span class="contact-link-value">
+    +63 912 345 6789
+</span>
+7. Create the QR code
+After the site is live, copy the final Netlify address.
+
+In Chrome:
+
+Open the deployed website.
+
+Click the address bar.
+
+Select the share icon.
+
+Choose Create QR code.
+
+Save the QR image.
+
+The QR code must use your final renamed address, not the temporary random Netlify address.
+
+Test it using another phone before sending it.
+
+Updating the website later
+After editing your local files:
+
+Open your Netlify project.
+
+Go to Deploys.
+
+Drag the updated project folder or ZIP into the manual deploy area.
+
+Wait for the new version to publish.
+
+The same website URL and QR code will continue working. You do not need to generate a new QR code after every update.
+
+Alternative: GitHub Pages
+GitHub Pages also hosts static HTML, CSS, and JavaScript directly from a repository. It is better for version control and automatic updates, but it requires creating a repository and uploading or pushing your project files. 
+
+For your current goal—deploying quickly and sending only a QR code—Netlify Drop is the simpler choice.
+
+
+lets use github
+
+Let’s deploy it using GitHub Pages. GitHub Pages can publish your HTML, CSS, JavaScript, and image files directly from a repository. 
+
+1. Prepare your project folder
+Make sure it has this structure:
+
+tjay-portfolio/
+├── index.html
+├── style.css
+├── script.js
+└── images/
+    ├── profile.jpg
+    ├── artwork-1.jpg
+    └── other-images.jpg
+Important:
+
+The main file must be named index.html.
+
+File names and paths must match exactly.
+
+Avoid spaces and uppercase letters in file names.
+
+Do not upload only the HTML file. Upload the CSS, JavaScript, images, and résumé too.
+
+Also fix your back-to-top link:
+
+<a href="#home" class="back-to-top">
+Your current hero ID is home, not hero.
+
+2. Create a GitHub repository
+Sign in to GitHub, then:
+
+Click the + button in the upper-right corner.
+
+Select New repository.
+
+Enter a repository name.
+
+You have two options.
+
+Recommended: personal website URL
+Name the repository exactly:
+
+your-github-username.github.io
+Example:
+
+tjaygapusan.github.io
+Your website will be:
+
+https://tjaygapusan.github.io
+GitHub’s official quickstart recommends this naming format for a user website. 
+
+Set the repository to:
+
+Public
+Then click Create repository.
+
+3. Upload your website files
+Inside the new repository:
+
+Click Add file.
+
+Select Upload files.
+
+Drag all the contents of your project folder into the upload area.
+
+Upload:
+
+index.html
+style.css
+script.js
+images/
+Do not upload the parent folder itself in a way that creates this:
+
+tjay-portfolio/index.html
+The correct repository root should show:
+
+index.html
+style.css
+script.js
+images
+Scroll down and click:
+
+Commit changes
+4. Enable GitHub Pages
+Inside your repository:
+
+Click Settings.
+
+In the left sidebar, click Pages.
+
+Under Build and deployment, find Source.
+
+Choose:
+
+Deploy from a branch
+Under Branch, select:
+
+main
+Select the folder:
+
+/ (root)
+Click Save.
+
+GitHub Pages officially supports publishing from a selected branch and either the repository root or a /docs folder. 
+
+Wait around one to five minutes, then refresh the Pages settings.
+
+You should see:
+
+Your site is live at:
+https://your-github-username.github.io
+5. Check the deployment status
+Open your repository and click the Actions tab.
+
+You may see a workflow named something similar to:
+
+pages build and deployment
+A green check means deployment succeeded.
+
+A red X means there is an error. The most common causes are:
+
+index.html is missing.
+
+index.html is inside another folder.
+
+The wrong branch was selected.
+
+Image paths do not match the actual filenames.
+
+6. Fix image problems
+GitHub Pages is case-sensitive.
+
+These are different online:
+
+<img src="images/profile.jpg">
+images/Profile.JPG
+They must match exactly.
+
+Use relative paths:
+
+<img src="images/profile.jpg" alt="Portrait">
+Do not use:
+
+<img src="/images/profile.jpg">
+For a user site, both may work, but relative paths are safer if you later move the project into another repository.
+
+Also check your JavaScript image data. It should use paths such as:
+
+image: "images/holiday-1.jpg"
+7. Create the QR code
+Once the site is live:
+
+Open your GitHub Pages website in Chrome.
+
+Click the share icon in the address bar.
+
+Select Create QR code.
+
+Download the QR image.
+
+Scan it using another phone to test it.
+
+Use the final website address:
+
+https://your-github-username.github.io
+Do not create the QR code from the repository address:
+
+https://github.com/your-username/your-repository
+The QR must point to the published Pages website.
+
+Updating the portfolio later
+Whenever you revise the website:
+
+Open the repository.
+
+Upload or edit the updated files.
+
+Commit the changes.
+
+GitHub Pages automatically redeploys the site.
+
+The URL stays the same, so the original QR code will continue working.
+
+GitHub Pages also supports HTTPS, which can be managed under the repository’s Settings → Pages area. 
+
+
+Screenshot 2026-07-16 at 3.14.11 PM.png
+how to add code file here
+
+Great! Now let's make it live.
+
+Step 1: Go to Settings
+At the top of your repository, click:
+
+Settings
+(not your GitHub account settings—the repository's Settings tab)
+
+Step 2: Open Pages
+On the left sidebar, scroll until you see:
+
+Code and automation
+Click:
+
+Pages
+Step 3: Configure GitHub Pages
+Under Build and deployment, set:
+
+Source
+
+Deploy from a branch
+Branch
+
+main
+Folder
+
+/ (root)
+Then click:
+
+Save
+Step 4: Wait
+GitHub usually takes 30 seconds to 2 minutes to build the site.
+
+Refresh the Pages page after about a minute.
+
+You should see something like:
+
+Your site is live at
+
+https://tajii0430.github.io
+Since your repository is named tajygapusan.github.io, your website should ultimately be available at:
+
+https://tajii0430.github.io/
+If it doesn't appear
+Go to the Actions tab.
+
+You should see something like:
+
+pages build and deployment
+🟢 Green check = Success
+
+🔴 Red X = Error
+
+If there's an error, I'll help you fix it.
+
+Next step
+Once you've enabled Pages, send me a screenshot of the Pages page (or tell me "done"), and I'll help you:
+
+✅ Make sure all images load correctly
+
+✅ Fix any broken links
+
+✅ Add a browser tab icon (favicon)
+
+✅ Improve the site for mobile
+
+✅ Generate a professional QR code for your application
+
+✅ Make the website feel even more polished before you submit it
+
+
+Screenshot 2026-07-16 at 3.22.37 PM.png
+
+This screenshot tells me exactly what's wrong.
+
+Your files are not actually in the repository yet.
+
+GitHub Pages says:
+
+"You must first add content to your repository before you can publish a GitHub Pages site."
+
+That's why main doesn't appear in the Branch list.
+
+Let's verify
+Go back to the Code tab.
+
+Do you see something like this?
+
+index.html
+style.css
+script.js
+images/
+Or do you still see the page that says:
+
+Quick setup — if you've done this kind of thing before...
+If you still see Quick setup, then the upload didn't finish.
+
+The easiest way
+From your screenshot of the repository, I noticed you probably created the repository but didn't commit the files.
+
+Go to:
+
+Code tab
+
+↓
+
+Click
+
+Add file
+↓
+
+Upload files
+Now drag everything inside your portfolio folder.
+
+Not the folder itself.
+
+You should upload:
+
+index.html
+style.css
+script.js
+images/
+Then scroll all the way down.
+
+Click the green button:
+
+Commit changes
+Wait until GitHub finishes.
+
+I need one screenshot
+Please send me the Code tab (not the Pages tab).
+
+I want to see whether your repository contains files or if it's still empty.
+
+Once I see that screenshot, I'll tell you the exact next step. This usually takes less than a minute to fix.
+
+
+Screenshot 2026-07-16 at 3.33.21 PM.png
+
+Perfect! 🎉 You're 99% done.
+
+From your screenshot, I can see:
+
+✅ GitHub Pages is enabled.
+
+✅ Source = Deploy from a branch
+
+✅ Branch = main
+
+✅ Folder = /(root)
+
+✅ GitHub is building your website.
+
+The message:
+
+"Your GitHub Pages site is currently being built from the main branch."
+
+means GitHub is publishing your website right now.
+
+Step 1: Wait about 1–2 minutes
+GitHub Pages usually takes 30 seconds to 2 minutes for the first deployment.
+
+Step 2: Open your website
+Go to:
+
+https://tajii0430.github.io/
+or refresh the Pages settings page.
+
+You should eventually see a green message like:
+
+Your site is live at
+https://tajii0430.github.io/
+If you get a 404
+That usually means one of these:
+
+❌ index.html is not in the repository root
+It should look like:
+
+📄 index.html
+📄 style.css
+📄 script.js
+📁 images
+NOT
+
+📁 Portfolio
+    📄 index.html
+If CSS or images don't load
+Open Developer Tools → Console (F12) and look for errors.
+
+Most common issue:
+
+<img src="Images/profile.jpg">
+but the folder is actually
+
+images
+GitHub is case-sensitive.
+
+One thing I noticed in your HTML 👀
+Your Back to Top button is:
+
+<a href="#hero" class="back-to-top">
+But your Hero section is
+
+<section class="hero" id="home">
+Change it to
+
+<a href="#home" class="back-to-top">
+After it goes live...
+I recommend we make it look even more professional.
+
+1. Custom favicon
+Instead of the default globe icon, your browser tab can show your personal logo or initials.
+
+2. Portfolio preview when shared
+When someone shares your site on Messenger or Facebook, it can display:
+
+your portrait
+
+title
+
+description
+
+preview image
+
+instead of a plain link.
+
+3. Loading speed
+Right now your portfolio is probably around 4–8 MB because of all the publication images.
+
+We can reduce it to around 1 MB while keeping almost the same visual quality.
+
+The site will feel much faster.
+
+4. QR Code
+I'll generate a professional QR code with your colors so you can simply submit one QR in your SIRMATA application.
+
+Right now
+Open:
+
+👉 https://tajii0430.github.io/
+
+and tell me:
+
+Does it load?
+
+Do all the images appear?
+
+Or do you get a 404 / blank page / broken styling?
+
+We'll fix any remaining issues in just a few minutes.
+
+
+Screenshot 2026-07-16 at 3.55.45 PM.png
+i undeployed it and edit something on my files, how can i redeploy again
+
+You don't need to "redeploy" manually. GitHub Pages redeploys automatically whenever you push or upload changes to the main branch.
+
+Option 1 — If you're editing files on your computer (recommended)
+Open your repository on GitHub.
+
+Click Code.
+
+Click Add file → Upload files.
+
+Drag in the updated files (or the entire project if easier).
+
+Scroll down.
+
+Click Commit changes.
+
+GitHub will automatically start a new deployment.
+
+Option 2 — Edit directly on GitHub
+Open the file you want to edit (e.g., style.css).
+
+Click the ✏️ Edit button.
+
+Make your changes.
+
+Scroll down.
+
+Click Commit changes.
+
+Again, GitHub Pages will redeploy automatically.
+
+How to know it's deploying
+Go to:
+
+Actions
+
+You should see something like:
+
+pages build and deployment
+A yellow dot 🟡 means it's building.
+
+A green check ✅ means it's finished.
+
+How to know it's live
+Refresh:
+
+https://tajii0430.github.io/
+or refresh the Pages settings page.
+
+Faster workflow (I highly recommend)
+Instead of uploading files through the browser every time, use GitHub Desktop.
+
+With GitHub Desktop, updating your site is just:
+
+Save changes in VS Code.
+
+Open GitHub Desktop.
+
+Click Commit to main.
+
+Click Push origin.
+
+Done. GitHub Pages automatically updates your site in about 30–60 seconds.
+
+This is much faster than uploading files through the browser every time.
+
+One question:
+Are you editing your portfolio in:
+
+VS Code on your computer (recommended), or
+
+directly on GitHub's website?
+
+If you're using VS Code, I can help you set up GitHub Desktop, which makes updating your portfolio take literally two clicks.
+
+
+Screenshot 2026-07-16 at 3.58.16 PM.png
+Screenshot 2026-07-16 at 3.58.36 PM.png
+Screenshot 2026-07-16 at 3.58.50 PM.png
+
+Your deployment is succeeding, but the repository name is the problem.
+
+Your GitHub username is:
+
+tajii0430
+For a personal GitHub Pages site, the repository must be named exactly:
+
+tajii0430.github.io
+Your current repository is:
+
+tjaygapusan.github.io
+That name does not match your GitHub username, so GitHub treats it differently. GitHub’s documentation states that a user site repository must use the exact format <username>.github.io. 
+
+Fix it by renaming the repository
+Open your repository.
+
+Click Settings.
+
+Stay on General.
+
+Find Repository name near the top.
+
+Change:
+
+tjaygapusan.github.io
+to:
+
+tajii0430.github.io
+Click Rename.
+
+GitHub allows repository owners to rename repositories from the settings page. 
+
+Re-enable Pages
+After renaming:
+
+Go to Settings → Pages.
+
+Select:
+
+Source: Deploy from a branch
+Branch: main
+Folder: / (root)
+Click Save if available.
+
+Wait around one to three minutes.
+
+Check Actions until the newest Pages deployment has a green check.
+
+Your final website address should then be:
+
+https://tajii0430.github.io/
+Do not use the old address:
+
+https://tajii0430.github.io/tjaygapusan.github.io/
+Also confirm that index.html remains at the top level of the repository. GitHub Pages requires the entry file to be named index.html and placed at the top level of the selected publishing source. 
+
+After renaming, open the new URL in an incognito window or press:
+
+Ctrl + Shift + R
+to force-refresh the page.
+
+
+when i open in iphone 13, this symbol ↗i is being converted into emoji
+
+This is a common issue on Safari/iOS.
+
+The character:
+
+↗
+is interpreted by Apple's font as an emoji/symbol glyph in some contexts.
+
+Option 1 (Recommended): Use SVG
+Instead of:
+
+<span class="practice-showcase-arrow">↗</span>
+use an SVG:
+
+<span class="practice-showcase-arrow">
+<svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+    <path
+        d="M7 17L17 7"
+        stroke="currentColor"
+        stroke-width="1.8"
+        stroke-linecap="round"
+        stroke-linejoin="round"/>
+    <path
+        d="M9 7H17V15"
+        stroke="currentColor"
+        stroke-width="1.8"
+        stroke-linecap="round"
+        stroke-linejoin="round"/>
+</svg>
+</span>
+Then CSS:
+
+.practice-showcase-arrow svg{
+    width:1.3rem;
+    height:1.3rem;
+    display:block;
+}
+This is the most professional solution and will look identical on every device.
+
+Option 2
+Use:
+
+↑
+and rotate it:
+
+.practice-showcase-arrow{
+    display:inline-block;
+    transform:rotate(45deg);
+}
+Option 3
+Use:
+
+➜
+or
+
+→
+instead.
+
+Option 4 (CSS Fix)
+Sometimes this works:
+
+.practice-showcase-arrow{
+    font-family:
+        "Helvetica Neue",
+        Helvetica,
+        Arial,
+        sans-serif;
+
+    font-variant-emoji:text;
+}
+Unfortunately Safari doesn't fully support font-variant-emoji, so it's unreliable.
+
+My recommendation ⭐⭐⭐⭐⭐
+Since your portfolio is aiming for a premium, editorial style, I would replace every arrow character in the entire site with SVG icons.
+
+I noticed you currently use arrows in several places:
+
+Hero button ↘
+
+Contact links ↗
+
+Practice section ↗
+
+Back to top ↑
+
+Lightbox navigation ← →
+
+Replacing them all with matching SVG icons will:
+
+look identical on Windows, macOS, Android, and iPhone,
+
+eliminate emoji rendering issues,
+
+feel more polished and consistent.
+
+I can provide a complete SVG icon set that matches your portfolio's editorial aesthetic, replacing every text arrow with scalable vector icons. I think it will noticeably elevate the overall quality of the site.
+
+
+
+Pasted text(3).txt
+Document
+give full modified code: 
+
+Worked for 42s
+I replaced all text arrows with inline SVG icons so iPhone Safari will no longer turn them into emoji. I also corrected:
+
+mailto: to tjluke0430@gmail.com
+
+Back to top from #hero to #home
+
+LAYOUT AND PAGE DESIN to LAYOUT AND PAGE DESIGN
+
+Your original HTML was used as the base. 
+
+
+index-svg-icons.html
+
+Add this CSS anywhere near your general icon/button styles:
+
+/* -----------------------------------
+   SVG ICONS
+----------------------------------- */
+
+.icon {
+    width: 1.35em;
+    height: 1.35em;
+    display: block;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.7;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    flex-shrink: 0;
+}
+
+.button-arrow,
+.practice-showcase-arrow,
+.contact-link-arrow,
+.back-to-top span {
+    display: inline-grid;
+    place-items: center;
+}
+
+.button-arrow .icon {
+    width: 26px;
+    height: 26px;
+}
+
+.practice-showcase-arrow .icon {
+    width: clamp(20px, 2vw, 32px);
+    height: clamp(20px, 2vw, 32px);
+}
+
+.contact-link-arrow .icon {
+    width: 25px;
+    height: 25px;
+}
+
+.back-to-top .icon {
+    width: 17px;
+    height: 17px;
+}
+
+.lightbox-navigation .icon {
+    width: 22px;
+    height: 22px;
+    margin: auto;
+}
+
+.practice-showcase-item:hover .practice-showcase-arrow {
+    transform: translate(5px, -5px);
+}
+
+.contact-link:hover .contact-link-arrow,
+.contact-link:focus-visible .contact-link-arrow {
+    transform: translate(3px, -3px);
+}
+
+.back-to-top:hover span {
+    transform: translateY(-5px);
+}
+Rename the downloaded file to:
+
+index.html
+Then replace the existing index.html in GitHub and commit the change. GitHub Pages will redeploy automatically.
+
+
+
+Library
+/
+index-svg-icons.html
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -143,7 +5606,10 @@
                     <span>Explore selected works</span>
 
                     <span class="button-arrow">
-                        ↘
+                        <svg class="icon icon-southeast" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                            <path d="M7 7L17 17"></path>
+                            <path d="M9 17H17V9"></path>
+                        </svg>
                     </span>
 
                 </a>
@@ -177,7 +5643,7 @@
 
                 <div class="marquee-track">
 
-                    <span>LAYOUT AND PAGE DESIN</span>
+                    <span>LAYOUT AND PAGE DESIGN</span>
                     <span>GRAPHIC ARTS</span>
                     <span>LOGO DESIGN</span>
                     <span>VISUAL HIERARCHY</span>
@@ -380,7 +5846,10 @@
                         </h4>
 
                         <span class="practice-showcase-arrow">
-                            ↗
+                            <svg class="icon icon-northeast" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                                <path d="M7 17L17 7"></path>
+                                <path d="M9 7H17V15"></path>
+                            </svg>
                         </span>
 
                     </article>
@@ -396,7 +5865,10 @@
                         </h4>
 
                         <span class="practice-showcase-arrow">
-                            ↗
+                            <svg class="icon icon-northeast" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                                <path d="M7 17L17 7"></path>
+                                <path d="M9 7H17V15"></path>
+                            </svg>
                         </span>
 
                     </article>
@@ -412,7 +5884,10 @@
                         </h4>
 
                         <span class="practice-showcase-arrow">
-                            ↗
+                            <svg class="icon icon-northeast" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                                <path d="M7 17L17 7"></path>
+                                <path d="M9 7H17V15"></path>
+                            </svg>
                         </span>
 
                     </article>
@@ -428,7 +5903,10 @@
                         </h4>
 
                         <span class="practice-showcase-arrow">
-                            ↗
+                            <svg class="icon icon-northeast" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                                <path d="M7 17L17 7"></path>
+                                <path d="M9 7H17V15"></path>
+                            </svg>
                         </span>
 
                     </article>
@@ -444,7 +5922,10 @@
                         </h4>
 
                         <span class="practice-showcase-arrow">
-                            ↗
+                            <svg class="icon icon-northeast" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                                <path d="M7 17L17 7"></path>
+                                <path d="M9 7H17V15"></path>
+                            </svg>
                         </span>
 
                     </article>
@@ -460,7 +5941,10 @@
                         </h4>
 
                         <span class="practice-showcase-arrow">
-                            ↗
+                            <svg class="icon icon-northeast" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                                <path d="M7 17L17 7"></path>
+                                <path d="M9 7H17V15"></path>
+                            </svg>
                         </span>
 
                     </article>
@@ -774,7 +6258,7 @@
 
                 <div class="contact-details">
 
-                    <a href="mailto:your-email@gmail.com" class="contact-link">
+                    <a href="mailto:tjluke0430@gmail.com" class="contact-link">
                         <span class="contact-link-label">
                             Email
                         </span>
@@ -784,12 +6268,14 @@
                         </span>
 
                         <span class="contact-link-arrow">
-                            ↗
+                            <svg class="icon icon-northeast" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                                <path d="M7 17L17 7"></path>
+                                <path d="M9 7H17V15"></path>
+                            </svg>
                         </span>
                     </a>
 
-                    <a href="http://facebook.com/tjayluke.gapusan.1" target="_blank" rel="noopener noreferrer"
-                        class="contact-link">
+                    <a href="https://facebook.com/tjayluke.gapusan.1" target="_blank" rel="noopener noreferrer" class="contact-link">
                         <span class="contact-link-label">
                             Facebook
                         </span>
@@ -799,7 +6285,10 @@
                         </span>
 
                         <span class="contact-link-arrow">
-                            ↗
+                            <svg class="icon icon-northeast" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                                <path d="M7 17L17 7"></path>
+                                <path d="M9 7H17V15"></path>
+                            </svg>
                         </span>
                     </a>
 
@@ -813,7 +6302,10 @@
                         </span>
 
                         <span class="contact-link-arrow">
-                            ↗
+                            <svg class="icon icon-northeast" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                                <path d="M7 17L17 7"></path>
+                                <path d="M9 7H17V15"></path>
+                            </svg>
                         </span>
                     </a>
 
@@ -883,9 +6375,14 @@
                     © 2026
                 </p>
 
-                <a href="#hero" class="back-to-top">
+                <a href="#home" class="back-to-top">
                     Back to top
-                    <span>↑</span>
+                    <span>
+                    <svg class="icon icon-up" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                        <path d="M12 19V5"></path>
+                        <path d="M6.5 10.5L12 5L17.5 10.5"></path>
+                    </svg>
+                </span>
                 </a>
 
             </footer>
@@ -903,12 +6400,18 @@
 
             <button class="lightbox-navigation lightbox-previous" id="lightboxPrevious" type="button"
                 aria-label="View previous artwork">
-                ←
+                <svg class="icon icon-left" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                    <path d="M19 12H5"></path>
+                    <path d="M10.5 6.5L5 12L10.5 17.5"></path>
+                </svg>
             </button>
 
             <button class="lightbox-navigation lightbox-next" id="lightboxNext" type="button"
                 aria-label="View next artwork">
-                →
+                <svg class="icon icon-right" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                    <path d="M5 12H19"></path>
+                    <path d="M13.5 6.5L19 12L13.5 17.5"></path>
+                </svg>
             </button>
 
             <div class="lightbox-content">
